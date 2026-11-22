@@ -1,12 +1,17 @@
 import { createActor } from "@/backend";
 import type { AccessStatus } from "@/backend";
+import {
+  clearPendingSignInEmail,
+  getPendingSignInEmail,
+  normalizeEmail,
+} from "@/lib/signInEmail";
 import { useActor } from "@caffeineai/core-infrastructure";
 import { useQuery } from "@tanstack/react-query";
 
 export const accessQueryKey = ["myAccess"] as const;
 
-/** Why a caller was denied: no verified email, or an email outside the allowlist. */
-export type AccessDenialReason = "noEmail" | "notListed";
+/** Why a caller was denied: missing, unlisted, or mismatched verified email. */
+export type AccessDenialReason = "noEmail" | "notListed" | "emailMismatch";
 
 /** Access status plus the denial reason the UI needs to pick the right guidance. */
 export type AccessResult =
@@ -42,8 +47,19 @@ export function useMyAccess() {
     queryFn: async (): Promise<AccessResult> => {
       if (!actor) return { __kind__: "denied", reason: "noEmail" };
 
+      const expectedEmail = getPendingSignInEmail();
       const first = await actor.getMyAccess();
-      if (first.__kind__ === "allowed") return first;
+      if (first.__kind__ === "allowed" && !expectedEmail) return first;
+      if (first.__kind__ === "allowed" && expectedEmail) {
+        const verifiedEmail = await actor.getMyVerifiedEmail();
+        if (verifiedEmail) {
+          if (normalizeEmail(verifiedEmail) !== expectedEmail) {
+            return { __kind__: "denied", reason: "emailMismatch" };
+          }
+          clearPendingSignInEmail();
+          return first;
+        }
+      }
 
       let captured = false;
       for (let attempt = 0; attempt < MAX_CAPTURE_ATTEMPTS; attempt += 1) {
@@ -56,8 +72,20 @@ export function useMyAccess() {
         }
         if (!email) continue;
         captured = true;
+        if (expectedEmail && normalizeEmail(email) !== expectedEmail) {
+          return { __kind__: "denied", reason: "emailMismatch" };
+        }
+        if (expectedEmail) clearPendingSignInEmail();
         const retried = await actor.getMyAccess();
         if (retried.__kind__ === "allowed") return retried;
+      }
+
+      const stored = await actor.getMyVerifiedEmail();
+      if (stored) {
+        if (expectedEmail && normalizeEmail(stored) !== expectedEmail) {
+          return { __kind__: "denied", reason: "emailMismatch" };
+        }
+        if (expectedEmail) clearPendingSignInEmail();
       }
 
       // The backend holds an email for this caller but it is not on the list.
@@ -65,7 +93,6 @@ export function useMyAccess() {
 
       // No email came back from the re-capture; fall back to what the backend
       // already stored so a stored-but-unlisted email is not reported as missing.
-      const stored = await actor.getMyVerifiedEmail();
       return { __kind__: "denied", reason: stored ? "notListed" : "noEmail" };
     },
     enabled: !!actor && !isFetching,

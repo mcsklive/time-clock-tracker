@@ -1,5 +1,10 @@
-import { accessQueryKey, useMyAccess } from "@/hooks/useAccess";
+import {
+  type AccessDenialReason,
+  accessQueryKey,
+  useMyAccess,
+} from "@/hooks/useAccess";
 import { accessCopy } from "@/lib/format";
+import { clearPendingSignInEmail } from "@/lib/signInEmail";
 import { useInternetIdentity } from "@caffeineai/core-infrastructure";
 import {
   QueryClient,
@@ -30,6 +35,7 @@ export function SignInButton({ className }: { className?: string }) {
           if (authenticated) {
             void queryClient.cancelQueries();
             queryClient.clear();
+            clearPendingSignInEmail();
             clear();
           } else {
             // Keep the popup inside the user's activation frame: no await before login.
@@ -94,7 +100,7 @@ export function RequireAccess({
   denied,
 }: {
   children: ReactNode;
-  denied: (reason: "noEmail" | "notListed") => ReactNode;
+  denied: (reason: AccessDenialReason) => ReactNode;
 }) {
   const { clear, loginStatus } = useInternetIdentity();
   const queryClient = useQueryClient();
@@ -154,6 +160,7 @@ export function RequireAccess({
             onClick={() => {
               void queryClient.cancelQueries();
               queryClient.clear();
+              clearPendingSignInEmail();
               clear();
             }}
             className="inline-flex min-h-11 items-center justify-center rounded-full border border-border px-5 text-sm font-medium text-muted-foreground transition-smooth hover:bg-secondary hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background"
