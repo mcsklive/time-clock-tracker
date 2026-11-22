@@ -1,0 +1,60 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-11-22T06:26:07.338Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "type",
+        "summary": "type \"09:00\" into textbox \"เวลาเริ่ม\"",
+        "target": {
+          "role": "textbox",
+          "name": "เวลาเริ่ม"
+        },
+        "value": "09:00"
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "create-and-keep-entry.e2e.ts::create-and-keep-entry",
+      "targetId": "web",
+      "instructionDigest": "eafc9411b7f074a0ac73adf891712c25218e89f3b3d456b02cb7597ac08f6945",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "recordedBy": {
+      "provider": "caffeine-inference.chat",
+      "model": "deepseek-v4.1-flash"
+    },
+    "summary": "Set the เวลาเริ่ม (start time) field to 09:00; it now holds value \"09:00\". Status remains Coaching, date 2026-11-22, no other fields touched.",
+    "startPath": "/",
+    "endPath": "/",
+    "endAnchors": [
+      {
+        "role": "textbox",
+        "name": "เวลาเริ่ม",
+        "value": "09:00"
+      }
+    ],
+    "goneAnchors": [
+      {
+        "role": "textbox",
+        "name": "เวลาเริ่ม"
+      }
+    ],
+    "endWaitMs": 10720,
+    "keyedBy": {
+      "cacheSchema": "trace-1",
+      "policyVersion": "conservative/6",
+      "project": "403fcccf39e2650a7e389bda5a9246bfe8c725769a98b3a749be67a096c16423",
+      "platform": "web",
+      "engineName": "web",
+      "engineSpiVersion": 1,
+      "appIdentity": "aec5acc8a8d7ba14d388c35095196d67ae7ad7199ff1168a3230addcf190cf8d",
+      "agentContextDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}

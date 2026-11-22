@@ -1,0 +1,67 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-11-22T06:36:35.850Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "type",
+        "summary": "type \"not-an-email\" into textbox \"ผู้อนุมัติ (อีเมลงาน)\"",
+        "target": {
+          "role": "textbox",
+          "name": "ผู้อนุมัติ (อีเมลงาน)",
+          "text": "somchai@example.com",
+          "placeholder": "หนึ่งอีเมลต่อบรรทัด manager@company.com"
+        },
+        "value": "not-an-email"
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "validation-errors.e2e.ts::validation-errors",
+      "targetId": "web",
+      "instructionDigest": "ea8492e6c67b138d9b76dfb06fa8fd88711a88eb016771f3b7decdc133bba4f1",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "recordedBy": {
+      "provider": "caffeine-inference.chat",
+      "model": "deepseek-v4.1-flash"
+    },
+    "summary": "Replaced the approver field (ผู้อนุมัติ (อีเมลงาน)) value with \"not-an-email\"; the textbox now shows value not-an-email. Form still holds date 2026-11-23, start 14:00, end 15:00, reason ทบทวนสคริปต์. Not submitted yet.",
+    "startPath": "/",
+    "endPath": "/",
+    "endAnchors": [
+      {
+        "role": "textbox",
+        "name": "ผู้อนุมัติ (อีเมลงาน)",
+        "text": "not-an-email",
+        "placeholder": "หนึ่งอีเมลต่อบรรทัด manager@company.com",
+        "value": "not-an-email"
+      }
+    ],
+    "goneAnchors": [
+      {
+        "role": "textbox",
+        "name": "ผู้อนุมัติ (อีเมลงาน)",
+        "text": "somchai@example.com",
+        "placeholder": "หนึ่งอีเมลต่อบรรทัด manager@company.com",
+        "value": "somchai@example.com"
+      }
+    ],
+    "endWaitMs": 10770,
+    "keyedBy": {
+      "cacheSchema": "trace-1",
+      "policyVersion": "conservative/6",
+      "project": "403fcccf39e2650a7e389bda5a9246bfe8c725769a98b3a749be67a096c16423",
+      "platform": "web",
+      "engineName": "web",
+      "engineSpiVersion": 1,
+      "appIdentity": "aec5acc8a8d7ba14d388c35095196d67ae7ad7199ff1168a3230addcf190cf8d",
+      "agentContextDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}

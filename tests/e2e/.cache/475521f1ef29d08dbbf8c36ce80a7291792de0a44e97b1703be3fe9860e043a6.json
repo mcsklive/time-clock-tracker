@@ -1,0 +1,195 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-11-22T06:00:38.715Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "type",
+        "summary": "type \"2030-06-16\" into textbox \"วันที่อบรม\"",
+        "target": {
+          "role": "textbox",
+          "name": "วันที่อบรม"
+        },
+        "value": "2030-06-16"
+      },
+      {
+        "name": "type",
+        "summary": "type \"Khun Anan\" into textbox \"ผู้โค้ช / หัวหน้า\"",
+        "target": {
+          "role": "textbox",
+          "name": "ผู้โค้ช / หัวหน้า",
+          "placeholder": "ชื่อผู้ทำการโค้ชชิ่ง"
+        },
+        "value": "Khun Anan"
+      },
+      {
+        "name": "type",
+        "summary": "type \"not-an-email\" into textbox \"อีเมลผู้รับการโค้ช\"",
+        "target": {
+          "role": "textbox",
+          "name": "อีเมลผู้รับการโค้ช",
+          "placeholder": "หนึ่งอีเมลต่อบรรทัด somchai@example.com"
+        },
+        "value": "not-an-email"
+      },
+      {
+        "name": "type",
+        "summary": "type \"ทดสอบอีเมล\" into textbox \"หัวข้อ / โฟกัส\"",
+        "target": {
+          "role": "textbox",
+          "name": "หัวข้อ / โฟกัส",
+          "placeholder": "เช่น การปิดการขายและการรับมือลูกค้าที่ลังเล"
+        },
+        "value": "ทดสอบอีเมล"
+      },
+      {
+        "name": "type",
+        "summary": "type \"ทดสอบ\" into textbox \"สิ่งที่พบจากการสังเกต\"",
+        "target": {
+          "role": "textbox",
+          "name": "สิ่งที่พบจากการสังเกต",
+          "placeholder": "สิ่งที่สังเกตเห็นระหว่างการฟังสายหรือดูแชท"
+        },
+        "value": "ทดสอบ"
+      },
+      {
+        "name": "type",
+        "summary": "type \"ทดสอบ\" into textbox \"ฟีดแบ็กที่ให้\"",
+        "target": {
+          "role": "textbox",
+          "name": "ฟีดแบ็กที่ให้",
+          "placeholder": "คำแนะนำที่ให้กับผู้รับการโค้ช"
+        },
+        "value": "ทดสอบ"
+      },
+      {
+        "name": "type",
+        "summary": "type \"ทดสอบ\" into textbox \"ข้อตกลงที่ต้องทำ\"",
+        "target": {
+          "role": "textbox",
+          "name": "ข้อตกลงที่ต้องทำ",
+          "placeholder": "สิ่งที่ตกลงให้ทำต่อ เช่น ฝึกสคริปต์ 3 รอบ"
+        },
+        "value": "ทดสอบ"
+      },
+      {
+        "name": "tap",
+        "summary": "tap button \"บันทึกการโค้ชชิ่ง\"",
+        "target": {
+          "role": "button",
+          "name": "บันทึกการโค้ชชิ่ง"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "reject-invalid-email.e2e.ts::reject-invalid-email",
+      "targetId": "web",
+      "instructionDigest": "1f3af8fba4501de23ddc3d5482a21f99cd00904acea77b08c30874ca57d79c4b",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "recordedBy": {
+      "provider": "caffeine-inference.chat",
+      "model": "deepseek-v4.1-flash"
+    },
+    "summary": "Filled the form (date 2030-06-16, coach Khun Anan, email not-an-email, topic ทดสอบอีเมล, observation/feedback/action items ทดสอบ) and pressed บันทึกการโค้ชชิ่ง. The app rejected the invalid email with the message \"รูปแบบอีเมลไม่ถูกต้อง: not-an-email\" and no new entry was saved.",
+    "startPath": "/",
+    "endPath": "/",
+    "endAnchors": [
+      {
+        "role": "textbox",
+        "name": "ผู้โค้ช / หัวหน้า",
+        "placeholder": "ชื่อผู้ทำการโค้ชชิ่ง",
+        "value": "Khun Anan"
+      },
+      {
+        "role": "textbox",
+        "name": "อีเมลผู้รับการโค้ช",
+        "text": "not-an-email",
+        "placeholder": "หนึ่งอีเมลต่อบรรทัด somchai@example.com",
+        "value": "not-an-email"
+      },
+      {
+        "text": "รูปแบบอีเมลไม่ถูกต้อง: not-an-email"
+      },
+      {
+        "role": "textbox",
+        "name": "หัวข้อ / โฟกัส",
+        "placeholder": "เช่น การปิดการขายและการรับมือลูกค้าที่ลังเล",
+        "value": "ทดสอบอีเมล"
+      },
+      {
+        "role": "textbox",
+        "name": "สิ่งที่พบจากการสังเกต",
+        "text": "ทดสอบ",
+        "placeholder": "สิ่งที่สังเกตเห็นระหว่างการฟังสายหรือดูแชท",
+        "value": "ทดสอบ"
+      },
+      {
+        "role": "textbox",
+        "name": "ฟีดแบ็กที่ให้",
+        "text": "ทดสอบ",
+        "placeholder": "คำแนะนำที่ให้กับผู้รับการโค้ช",
+        "value": "ทดสอบ"
+      },
+      {
+        "role": "textbox",
+        "name": "ข้อตกลงที่ต้องทำ",
+        "text": "ทดสอบ",
+        "placeholder": "สิ่งที่ตกลงให้ทำต่อ เช่น ฝึกสคริปต์ 3 รอบ",
+        "value": "ทดสอบ"
+      }
+    ],
+    "goneAnchors": [
+      {
+        "role": "textbox",
+        "name": "ผู้โค้ช / หัวหน้า",
+        "placeholder": "ชื่อผู้ทำการโค้ชชิ่ง"
+      },
+      {
+        "role": "textbox",
+        "name": "อีเมลผู้รับการโค้ช",
+        "placeholder": "หนึ่งอีเมลต่อบรรทัด somchai@example.com"
+      },
+      {
+        "text": "ใส่หนึ่งอีเมลต่อบรรทัด ระบบจะตัดช่องว่างและข้ามบรรทัดว่างให้"
+      },
+      {
+        "role": "textbox",
+        "name": "หัวข้อ / โฟกัส",
+        "placeholder": "เช่น การปิดการขายและการรับมือลูกค้าที่ลังเล"
+      },
+      {
+        "role": "textbox",
+        "name": "สิ่งที่พบจากการสังเกต",
+        "placeholder": "สิ่งที่สังเกตเห็นระหว่างการฟังสายหรือดูแชท"
+      },
+      {
+        "role": "textbox",
+        "name": "ฟีดแบ็กที่ให้",
+        "placeholder": "คำแนะนำที่ให้กับผู้รับการโค้ช"
+      },
+      {
+        "role": "textbox",
+        "name": "ข้อตกลงที่ต้องทำ",
+        "placeholder": "สิ่งที่ตกลงให้ทำต่อ เช่น ฝึกสคริปต์ 3 รอบ"
+      }
+    ],
+    "endWaitMs": 10937,
+    "keyedBy": {
+      "cacheSchema": "trace-1",
+      "policyVersion": "conservative/6",
+      "project": "403fcccf39e2650a7e389bda5a9246bfe8c725769a98b3a749be67a096c16423",
+      "platform": "web",
+      "engineName": "web",
+      "engineSpiVersion": 1,
+      "appIdentity": "aec5acc8a8d7ba14d388c35095196d67ae7ad7199ff1168a3230addcf190cf8d",
+      "agentContextDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-11-22T00:15:25.487Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap button \"ออกงาน\" in \"สถานะการทำงานปัจจุบัน\"",
+        "target": {
+          "role": "button",
+          "name": "ออกงาน",
+          "within": "สถานะการทำงานปัจจุบัน"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "history-filter-and-reload.e2e.ts::history-filter-and-reload",
+      "targetId": "web",
+      "instructionDigest": "0d421bb3ea920d3ef6aa679327b70cf2fa239ef5d2c71e0c7a386ead8cbe3e89",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "recordedBy": {
+      "provider": "caffeine-inference.chat",
+      "model": "deepseek-v4.1-flash"
+    },
+    "summary": "Pressed ออกงาน. Status changed from \"กำลังทำงาน\" to \"ยังไม่เข้างาน\", the open entry closed as \"22 พ.ย. 2569 00:15 น. – 00:15 น. 00:00:01\", and the primary button is now เข้างาน.",
+    "startPath": "/",
+    "endPath": "/",
+    "endAnchors": [
+      {
+        "text": "ยังไม่เข้างาน"
+      },
+      {
+        "text": "กดปุ่มเข้างานเพื่อเริ่มจับเวลาของคุณ"
+      },
+      {
+        "role": "textbox",
+        "name": "หมายเหตุ (ไม่บังคับ)",
+        "placeholder": "เช่น เริ่มกะเช้า ทำงานจากบ้าน"
+      }
+    ],
+    "goneAnchors": [
+      {
+        "text": "กำลังทำงาน"
+      },
+      {
+        "role": "textbox",
+        "name": "หมายเหตุ (ไม่บังคับ)",
+        "placeholder": "เช่น งานภาคสนาม ประชุมลูกค้า"
+      },
+      {
+        "text": "—"
+      }
+    ],
+    "endWaitMs": 11150,
+    "keyedBy": {
+      "cacheSchema": "trace-1",
+      "policyVersion": "conservative/6",
+      "project": "403fcccf39e2650a7e389bda5a9246bfe8c725769a98b3a749be67a096c16423",
+      "platform": "web",
+      "engineName": "web",
+      "engineSpiVersion": 1,
+      "appIdentity": "aec5acc8a8d7ba14d388c35095196d67ae7ad7199ff1168a3230addcf190cf8d",
+      "agentContextDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}

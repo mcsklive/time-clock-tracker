@@ -1,0 +1,110 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-11-22T00:15:25.488Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap link \"ประวัติ\" (1 of 2)",
+        "target": {
+          "role": "link",
+          "name": "ประวัติ",
+          "position": {
+            "index": 0,
+            "of": 2
+          }
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "history-filter-and-reload.e2e.ts::history-filter-and-reload",
+      "targetId": "web",
+      "instructionDigest": "3680958e576fa1577b3268c60586f07e47213559bd949da61ee6b2cf67aef496",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "recordedBy": {
+      "provider": "caffeine-inference.chat",
+      "model": "deepseek-v4.1-flash"
+    },
+    "summary": "Opened ประวัติ (/history). The history page shows the summary, the date-range filter (วันนี้ / สัปดาห์นี้ / เดือนนี้ / กำหนดเอง, currently เดือนนี้), and 2 entries for 22 พ.ย. 2569. No filter was changed.",
+    "startPath": "/",
+    "endPath": "/history",
+    "endAnchors": [
+      {
+        "role": "heading",
+        "name": "ประวัติการลงเวลา"
+      },
+      {
+        "text": "ดูรายการเข้างานและออกงานย้อนหลัง พร้อมชั่วโมงทำงานรวมของคุณ"
+      },
+      {
+        "text": "ชั่วโมงทำงานวันนี้"
+      },
+      {
+        "text": "สะสมตั้งแต่ต้นสัปดาห์"
+      },
+      {
+        "text": "สะสมตั้งแต่ต้นเดือน"
+      },
+      {
+        "role": "heading",
+        "name": "ช่วงวันที่"
+      },
+      {
+        "text": "เลือกช่วงวันที่สำเร็จรูป"
+      },
+      {
+        "role": "button",
+        "name": "วันนี้"
+      }
+    ],
+    "goneAnchors": [
+      {
+        "role": "heading",
+        "name": "สถานะการทำงานปัจจุบัน"
+      },
+      {
+        "text": "ยังไม่เข้างาน"
+      },
+      {
+        "text": "กดปุ่มเข้างานเพื่อเริ่มจับเวลาของคุณ"
+      },
+      {
+        "text": "หมายเหตุ (ไม่บังคับ)"
+      },
+      {
+        "role": "textbox",
+        "name": "หมายเหตุ (ไม่บังคับ)",
+        "placeholder": "เช่น เริ่มกะเช้า ทำงานจากบ้าน"
+      },
+      {
+        "text": "0/120"
+      },
+      {
+        "role": "button",
+        "name": "เข้างาน"
+      },
+      {
+        "role": "button",
+        "name": "ออกงาน"
+      }
+    ],
+    "endWaitMs": 10805,
+    "keyedBy": {
+      "cacheSchema": "trace-1",
+      "policyVersion": "conservative/6",
+      "project": "403fcccf39e2650a7e389bda5a9246bfe8c725769a98b3a749be67a096c16423",
+      "platform": "web",
+      "engineName": "web",
+      "engineSpiVersion": 1,
+      "appIdentity": "aec5acc8a8d7ba14d388c35095196d67ae7ad7199ff1168a3230addcf190cf8d",
+      "agentContextDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}

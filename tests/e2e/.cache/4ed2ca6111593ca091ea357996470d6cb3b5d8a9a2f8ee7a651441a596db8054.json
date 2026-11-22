@@ -1,0 +1,73 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-11-22T00:12:38.908Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap button \"เข้างาน\" in \"สถานะการทำงานปัจจุบัน\"",
+        "target": {
+          "role": "button",
+          "name": "เข้างาน",
+          "within": "สถานะการทำงานปัจจุบัน"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "duplicate-guard.e2e.ts::duplicate-guard",
+      "targetId": "web",
+      "instructionDigest": "f5438e795e0ac932ebe0607fd31df6f073e7634b932b7cf4d44c73b061c9efc8",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "recordedBy": {
+      "provider": "caffeine-inference.chat",
+      "model": "deepseek-v4.1-flash"
+    },
+    "summary": "Pressed เข้างาน; the app started the clock: status changed to \"กำลังทำงาน\", note reads \"เข้างานเมื่อ 00:12 น. · 22 พ.ย. 2569\", and a new open entry \"00:12 น. – กำลังทำงาน\" appears in รายการล่าสุด. The primary button now reads ออกงาน.",
+    "startPath": "/",
+    "endPath": "/",
+    "endAnchors": [
+      {
+        "text": "กำลังทำงาน"
+      },
+      {
+        "role": "textbox",
+        "name": "หมายเหตุ (ไม่บังคับ)",
+        "placeholder": "เช่น งานภาคสนาม ประชุมลูกค้า"
+      },
+      {
+        "text": "—"
+      }
+    ],
+    "goneAnchors": [
+      {
+        "text": "ยังไม่เข้างาน"
+      },
+      {
+        "text": "กดปุ่มเข้างานเพื่อเริ่มจับเวลาของคุณ"
+      },
+      {
+        "role": "textbox",
+        "name": "หมายเหตุ (ไม่บังคับ)",
+        "placeholder": "เช่น เริ่มกะเช้า ทำงานจากบ้าน"
+      }
+    ],
+    "endWaitMs": 11262,
+    "keyedBy": {
+      "cacheSchema": "trace-1",
+      "policyVersion": "conservative/6",
+      "project": "403fcccf39e2650a7e389bda5a9246bfe8c725769a98b3a749be67a096c16423",
+      "platform": "web",
+      "engineName": "web",
+      "engineSpiVersion": 1,
+      "appIdentity": "aec5acc8a8d7ba14d388c35095196d67ae7ad7199ff1168a3230addcf190cf8d",
+      "agentContextDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}

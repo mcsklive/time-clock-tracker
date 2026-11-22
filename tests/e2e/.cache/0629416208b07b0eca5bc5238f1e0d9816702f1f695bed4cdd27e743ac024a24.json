@@ -1,0 +1,68 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-11-22T06:26:50.839Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap button \"บันทึกการโค้ชชิ่ง\"",
+        "target": {
+          "role": "button",
+          "name": "บันทึกการโค้ชชิ่ง"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "validation-errors.e2e.ts::validation-errors",
+      "targetId": "web",
+      "instructionDigest": "25f2d03d586db6f43bdd39149f6fdc6943c587815a8154868848da5e33818b0c",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "recordedBy": {
+      "provider": "caffeine-inference.chat",
+      "model": "deepseek-v4.1-flash"
+    },
+    "summary": "Tapped \"บันทึกการโค้ชชิ่ง\" with the form empty; the app refused and showed validation errors: กรุณาเลือกสถานะ, กรุณากรอกเวลาเริ่ม, กรุณากรอกเวลาสิ้นสุด, กรุณากรอกเหตุผลที่ใช้สถานะนี้, กรุณากรอกอีเมลผู้อนุมัติอย่างน้อยหนึ่งรายการ. No record was created.",
+    "startPath": "/",
+    "endPath": "/",
+    "endAnchors": [
+      {
+        "text": "กรุณาเลือกสถานะ"
+      },
+      {
+        "text": "กรุณากรอกเวลาเริ่ม"
+      },
+      {
+        "text": "กรุณากรอกเวลาสิ้นสุด"
+      },
+      {
+        "text": "กรุณากรอกเหตุผลที่ใช้สถานะนี้"
+      },
+      {
+        "text": "กรุณากรอกอีเมลผู้อนุมัติอย่างน้อยหนึ่งรายการ"
+      }
+    ],
+    "goneAnchors": [
+      {
+        "text": "ใส่หนึ่งอีเมลต่อบรรทัด ระบบจะตัดช่องว่างและข้ามบรรทัดว่างให้"
+      }
+    ],
+    "endWaitMs": 11068,
+    "keyedBy": {
+      "cacheSchema": "trace-1",
+      "policyVersion": "conservative/6",
+      "project": "403fcccf39e2650a7e389bda5a9246bfe8c725769a98b3a749be67a096c16423",
+      "platform": "web",
+      "engineName": "web",
+      "engineSpiVersion": 1,
+      "appIdentity": "aec5acc8a8d7ba14d388c35095196d67ae7ad7199ff1168a3230addcf190cf8d",
+      "agentContextDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}

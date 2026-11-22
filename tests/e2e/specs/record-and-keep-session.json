@@ -1,0 +1,41 @@
+{
+  "version": 1,
+  "spec": {
+    "id": "record-and-keep-session",
+    "kind": "interactive",
+    "goal": "บันทึกการโค้ชชิ่งครั้งใหม่ด้วยอีเมลสองคน แล้วเห็นรายการและข้อมูลคงอยู่หลังรีเฟรชหน้า",
+    "requirementIndexes": [],
+    "acceptanceCriteriaIndexes": [],
+    "steps": [
+      "Sign in",
+      "Add a coaching session dated 2030-06-15 with coach Khun Anan, coached emails anan.test@example.com and malee.test@example.com, topic การปิดการขาย, observation ลูกค้าถามราคาแล้วไม่ตอบ, feedback ควรสรุปBenefitsให้เร็วขึ้น, action items โทรกลับภายในวันเดียว, and press บันทึก",
+      "Reload the page"
+    ],
+    "checks": [
+      {
+        "afterStep": 0,
+        "expectText": "บันทึกการโค้ชชิ่ง"
+      },
+      {
+        "afterStep": 1,
+        "expectText": "anan.test@example.com"
+      },
+      {
+        "afterStep": 1,
+        "expectText": "malee.test@example.com"
+      },
+      {
+        "afterStep": 1,
+        "expectText": "การปิดการขาย"
+      },
+      {
+        "afterStep": 2,
+        "expectText": "บันทึกการโค้ชชิ่ง"
+      },
+      {
+        "afterStep": 2,
+        "expectText": "การปิดการขาย"
+      }
+    ]
+  }
+}

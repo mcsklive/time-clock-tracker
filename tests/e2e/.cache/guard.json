@@ -1,0 +1,190 @@
+{
+  "version": 1,
+  "flows": {
+    "allowed-user-logs-session": {
+      "plan": [
+        "1df0afe338359831",
+        "2dd6db7ffc1ee1d4",
+        "34183b6c91e42c43",
+        "37bcfbbb5474fe97",
+        "5312ef82aaacb316",
+        "632ffaf3df15c8af",
+        "6699d3d9a236ea6d",
+        "6d04ee70c70a4095",
+        "787591cad577020b",
+        "8be6faa48410911e",
+        "95193e622d17f64c",
+        "c53059ef955c73a0",
+        "d21d2e7d51ed6d70",
+        "d7557bfdbe1290a3",
+        "d7ea9a2ad2124f47"
+      ],
+      "last": "failed"
+    },
+    "clock-in-and-out": {
+      "plan": [
+        "15c1a054ec4e8dde",
+        "2875299798137cdd",
+        "34a2664203650a36",
+        "3f4424a9ea34eca8",
+        "4826ef822496b469",
+        "5fc6b2643afdb6fb",
+        "6ec0fd23583439fb",
+        "70f52473a9867cbb",
+        "9985957748eb6ae5",
+        "efc432a37dcbc186",
+        "f2eb0357f2d43867"
+      ],
+      "last": "failed"
+    },
+    "create-and-keep-entry": {
+      "plan": [
+        "0147fbfab086b1c4",
+        "060d09e5c59bbb33",
+        "08890f799a8fb3a9",
+        "141053a7af648f1b",
+        "2ec083f5bff9dbd1",
+        "325cf884f29cab0d",
+        "38aa26955b241d76",
+        "474cf1baf5020279",
+        "7c07f6e8928157b6",
+        "a1d485e9025e8fe9",
+        "a418b7bf3e553163",
+        "ace1eaa0696f5f10",
+        "b2c253b2f503308c",
+        "cc53abfc2bcb639c",
+        "fbb96fbec9081fcf"
+      ],
+      "last": "failed"
+    },
+    "denied-user-sees-no-data": {
+      "plan": [
+        "5252107340c58e5f",
+        "dc9cc67b9511ca83",
+        "e1e4b4e499a2a587"
+      ],
+      "last": "failed"
+    },
+    "duplicate-guard": {
+      "plan": [
+        "1caed2ec03740b03",
+        "610d7aa0ccec13f8"
+      ],
+      "last": "failed"
+    },
+    "edit-and-delete-session": {
+      "plan": [
+        "1941631386556c49",
+        "53a53858ceca18dc",
+        "7fdf36d660bb83d9",
+        "8deddc5e4a5d248f",
+        "b2c29bf7690833b5"
+      ],
+      "last": "failed"
+    },
+    "edit-and-filter": {
+      "plan": [
+        "060d09e5c59bbb33",
+        "7b29d7bef728cd78",
+        "b7d286252d31b7b6",
+        "d0d40815f55d1640",
+        "ddf84c4be20d65de",
+        "fbb96fbec9081fcf"
+      ],
+      "last": "failed"
+    },
+    "filter-and-summary": {
+      "plan": [
+        "09448292e590f50c",
+        "1941631386556c49",
+        "2af7c3b9a5bf3aea",
+        "63666166ef68b61f",
+        "acfb2592a499f744",
+        "b3a5e743a8905ff0",
+        "e839acaad1dad2fd"
+      ],
+      "last": "failed"
+    },
+    "history-filter-and-reload": {
+      "plan": [
+        "01e192b112c90c19",
+        "5f2c74dbeae85bde",
+        "70ed6c0f43143cf8",
+        "8b5f4c95e370d068",
+        "a981d031ee5527a3",
+        "b90c35971ad464d2",
+        "ce8dfd783943b83f",
+        "f9b34c98699e7e62"
+      ],
+      "last": "failed"
+    },
+    "record-and-keep-session": {
+      "plan": [
+        "0ae23e664f671536",
+        "181b9da6c3f5d633",
+        "1941631386556c49",
+        "43ad1ae32cdb2461",
+        "6aba29d4cf10aa79",
+        "7fa0cf8616f72e0b",
+        "812b408ef29f2a66",
+        "89ea61f1413edf4b",
+        "8deddc5e4a5d248f",
+        "a4fe8f01592d202d",
+        "acfb2592a499f744",
+        "b2c29bf7690833b5",
+        "e839acaad1dad2fd",
+        "f62a4c1556ca7734"
+      ],
+      "last": "failed"
+    },
+    "reject-invalid-email": {
+      "plan": [
+        "181b9da6c3f5d633",
+        "c1b7625603b325ca"
+      ],
+      "last": "failed"
+    },
+    "second-user-isolation": {
+      "plan": [
+        "2b32938073334054",
+        "a1d485e9025e8fe9"
+      ],
+      "last": "failed"
+    },
+    "signed-out-visitor": {
+      "plan": [
+        "1c74f04221271d3b",
+        "578cc6a195bba176",
+        "7aeb4d3129033652"
+      ],
+      "last": "failed"
+    },
+    "validation-errors": {
+      "plan": [
+        "03bfe074c52f1146",
+        "05ab1388f89985bc",
+        "0f8cdf6002ecd8c0",
+        "6da34651459ed8ec",
+        "97968c4f503f470b",
+        "c0f289c05f8ba247"
+      ],
+      "last": "failed"
+    }
+  },
+  "order": [
+    "clock-in-and-out",
+    "duplicate-guard",
+    "history-filter-and-reload",
+    "signed-out-visitor",
+    "record-and-keep-session",
+    "reject-invalid-email",
+    "edit-and-delete-session",
+    "filter-and-summary",
+    "create-and-keep-entry",
+    "validation-errors",
+    "edit-and-filter",
+    "second-user-isolation",
+    "allowed-user-logs-session",
+    "denied-user-sees-no-data"
+  ]
+}

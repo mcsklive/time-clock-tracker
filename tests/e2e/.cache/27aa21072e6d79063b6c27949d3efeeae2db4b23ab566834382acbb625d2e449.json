@@ -1,0 +1,101 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-11-22T06:00:59.228Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap button \"ลบ\" in \"15 มิ.ย. 2573\"",
+        "target": {
+          "role": "button",
+          "name": "ลบ",
+          "within": "15 มิ.ย. 2573"
+        }
+      },
+      {
+        "name": "tap",
+        "summary": "tap button \"ยืนยันลบ\"",
+        "target": {
+          "role": "button",
+          "name": "ยืนยันลบ"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "edit-and-delete-session.e2e.ts::edit-and-delete-session",
+      "targetId": "web",
+      "instructionDigest": "dddb736783f15cc46bff962f6b312a9cfeb6e31c2bf313e840c81baabffca796",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "recordedBy": {
+      "provider": "caffeine-inference.chat",
+      "model": "deepseek-v4.1-flash"
+    },
+    "summary": "Tapped \"ลบ\" on the entry titled \"การปิดการขายขั้นสูง\", confirmed in the \"ยืนยันการลบบันทึก\" dialog with \"ยืนยันลบ\". The app showed \"ลบบันทึกเรียบร้อยแล้ว\"; the latest entries list is now empty (\"ยังไม่มีบันทึกการโค้ชชิ่ง\") and counts are 0.",
+    "startPath": "/",
+    "endPath": "/",
+    "endAnchors": [
+      {
+        "role": "status",
+        "name": "ลบบันทึกเรียบร้อยแล้ว"
+      },
+      {
+        "text": "ยังไม่มีข้อมูลผู้รับการโค้ช"
+      },
+      {
+        "role": "heading",
+        "name": "ยังไม่มีบันทึกการโค้ชชิ่ง"
+      },
+      {
+        "text": "เริ่มบันทึกครั้งแรกจากฟอร์มด้านบน เพื่อเก็บประวัติการโค้ชชิ่งและติดตามผลได้ง่ายขึ้น"
+      },
+      {
+        "text": "ข้อมูลของคุณจะถูกเก็บเป็นส่วนตัว"
+      }
+    ],
+    "goneAnchors": [
+      {
+        "role": "status",
+        "name": "บันทึกการแก้ไขเรียบร้อยแล้ว"
+      },
+      {
+        "text": "anan.test@example.com"
+      },
+      {
+        "text": "15 มิ.ย. 2573"
+      },
+      {
+        "text": "1 ครั้ง"
+      },
+      {
+        "text": "malee.test@example.com"
+      },
+      {
+        "text": "วันเสาร์"
+      },
+      {
+        "text": "· ผู้โค้ช Khun Anan"
+      },
+      {
+        "text": "การปิดการขายขั้นสูง"
+      }
+    ],
+    "endWaitMs": 11263,
+    "keyedBy": {
+      "cacheSchema": "trace-1",
+      "policyVersion": "conservative/6",
+      "project": "403fcccf39e2650a7e389bda5a9246bfe8c725769a98b3a749be67a096c16423",
+      "platform": "web",
+      "engineName": "web",
+      "engineSpiVersion": 1,
+      "appIdentity": "aec5acc8a8d7ba14d388c35095196d67ae7ad7199ff1168a3230addcf190cf8d",
+      "agentContextDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}

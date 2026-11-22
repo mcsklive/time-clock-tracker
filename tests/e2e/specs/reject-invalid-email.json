@@ -1,0 +1,24 @@
+{
+  "version": 1,
+  "spec": {
+    "id": "reject-invalid-email",
+    "kind": "interactive",
+    "goal": "อีเมลผิดรูปแบบถูกปฏิเสธและไม่ถูกบันทึก",
+    "requirementIndexes": [],
+    "acceptanceCriteriaIndexes": [],
+    "steps": [
+      "Sign in",
+      "Add a coaching session dated 2030-06-16 with coach Khun Anan, coached email not-an-email, topic ทดสอบอีเมล, observation ทดสอบ, feedback ทดสอบ, action items ทดสอบ, and press บันทึก"
+    ],
+    "checks": [
+      {
+        "afterStep": 0,
+        "expectText": "บันทึกการโค้ชชิ่ง"
+      },
+      {
+        "afterStep": 1,
+        "expectNoText": "ทดสอบอีเมล"
+      }
+    ]
+  }
+}

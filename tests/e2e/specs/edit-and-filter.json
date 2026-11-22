@@ -1,0 +1,49 @@
+{
+  "version": 1,
+  "spec": {
+    "id": "edit-and-filter",
+    "kind": "interactive",
+    "goal": "แก้ไขรายการเดิมและกรองประวัติตามอีเมลผู้อนุมัติ",
+    "requirementIndexes": [],
+    "acceptanceCriteriaIndexes": [],
+    "steps": [
+      "Sign in",
+      "เปิดหน้ารายการย้อนหลัง",
+      "กดแก้ไขรายการ อบรมเทคนิคการปิดการขาย",
+      "เปลี่ยนเหตุผลในการใช้สถานะเป็น อบรมเทคนิคการปิดการขายรอบสอง",
+      "กดบันทึกการแก้ไข",
+      "เลือกอีเมล somchai@example.com ในตัวกรองอีเมล",
+      "Reload the page"
+    ],
+    "checks": [
+      {
+        "afterStep": 0,
+        "expectText": "บันทึก"
+      },
+      {
+        "afterStep": 1,
+        "expectText": "อบรมเทคนิคการปิดการขาย"
+      },
+      {
+        "afterStep": 2,
+        "expectText": "Coaching"
+      },
+      {
+        "afterStep": 3,
+        "expectText": "อบรมเทคนิคการปิดการขายรอบสอง"
+      },
+      {
+        "afterStep": 4,
+        "expectText": "อบรมเทคนิคการปิดการขายรอบสอง"
+      },
+      {
+        "afterStep": 5,
+        "expectText": "somchai@example.com"
+      },
+      {
+        "afterStep": 6,
+        "expectText": "อบรมเทคนิคการปิดการขายรอบสอง"
+      }
+    ]
+  }
+}

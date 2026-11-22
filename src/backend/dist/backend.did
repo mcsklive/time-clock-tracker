@@ -1,0 +1,141 @@
+type Value = 
+ variant {
+   "bool": bool;
+   float: float64;
+   "int": int;
+   "nat": nat;
+   "null";
+   "text": text;
+ };
+type UserRole = 
+ variant {
+   admin;
+   guest;
+   user;
+ };
+type UserId = principal;
+type Timestamp = int;
+type Result__1 = 
+ record {
+   hasMore: bool;
+   rows: vec vec Cell;
+ };
+type Result_2 = 
+ variant {
+   err: Error;
+   ok;
+ };
+type Result_1 = 
+ variant {
+   err: CoachingError;
+   ok;
+ };
+type Result = 
+ variant {
+   err: CoachingError;
+   ok: CoachingEntry;
+ };
+type RecordId = nat;
+type PermissionLevel = 
+ variant {
+   allControl;
+   logStatus;
+   viewOnly;
+ };
+type Error = 
+ variant {
+   AmbiguousAttribute: record {
+                         field: text;
+                         sources: vec text;
+                       };
+   FrontendOriginMismatch: record {
+                             expected: vec text;
+                             got: text;
+                           };
+   FrontendOriginsNotConfigured;
+   MalformedCandid;
+   MissingField: text;
+   MixedSsoSources: record {
+                      otherKeys: vec text;
+                      ssoKeys: vec text;
+                    };
+   NoAttributes;
+   Stale: record {ageNs: nat;};
+   UnknownNonce;
+   UntrustedSsoSource: record {domain: text;};
+ };
+type EntryStatus = 
+ variant {
+   coaching;
+   outboundChat;
+   training;
+ };
+type EmailSummary = 
+ record {
+   count: nat;
+   email: text;
+   latestSessionDate: Timestamp;
+ };
+type CoachingTotals = 
+ record {
+   totalApprovers: nat;
+   totalSessions: nat;
+ };
+type CoachingError = 
+ variant {
+   invalidInput: text;
+   notFound: RecordId;
+   notOwner: RecordId;
+ };
+type CoachingEntry = 
+ record {
+   approverEmails: vec text;
+   createdAt: Timestamp;
+   endTime: Timestamp;
+   id: RecordId;
+   owner: UserId;
+   reason: text;
+   sessionDate: Timestamp;
+   startTime: Timestamp;
+   status: EntryStatus;
+   updatedAt: Timestamp;
+ };
+type Cell = 
+ record {
+   name: text;
+   value: Value;
+ };
+type AccessStatus = 
+ variant {
+   allowed:
+    record {
+      displayName: text;
+      permission: PermissionLevel;
+      role: text;
+    };
+   denied;
+ };
+service : {
+  _initialize_access_control: () -> ();
+  _internet_identity_sign_in_finish: () -> (Result_2);
+  _internet_identity_sign_in_start: () -> (blob);
+  assignCallerUserRole: (user: principal, role: UserRole) -> ();
+  createEntry: (status: EntryStatus, sessionDate: Timestamp, startTime:
+   Timestamp, endTime: Timestamp, reason: text, approverEmails: vec text) ->
+   (Result);
+  deleteMyEntry: (id: RecordId) -> (Result_1);
+  execute: (qJson: text) -> (Result__1) query;
+  getApiDoc: () -> (text) query;
+  getCallerUserRole: () -> (UserRole) query;
+  getMyAccess: () -> (AccessStatus) query;
+  getMyVerifiedEmail: () -> (opt text) query;
+  isCallerAdmin: () -> (bool) query;
+  listMyEntries: () -> (vec CoachingEntry) query;
+  mySummary: () -> (vec EmailSummary) query;
+  myTotals: () -> (CoachingTotals) query;
+  refreshVerifiedEmail: () -> (opt text);
+  schema: () -> (text) query;
+  updateMyEntry: (id: RecordId, status: EntryStatus, sessionDate: Timestamp,
+   startTime: Timestamp, endTime: Timestamp, reason: text, approverEmails:
+   vec text) -> (Result);
+}

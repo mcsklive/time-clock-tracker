@@ -1,0 +1,54 @@
+{
+  "version": 1,
+  "spec": {
+    "id": "allowed-user-logs-session",
+    "kind": "interactive",
+    "goal": "A person on the approved list signs in, sees their name and role, records a coaching session and finds it after a reload",
+    "requirementIndexes": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      7,
+      8,
+      9
+    ],
+    "acceptanceCriteriaIndexes": [
+      0,
+      1,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "steps": [
+      "Sign in",
+      "Add a coaching entry with the reason Buy milk follow-up and press Save",
+      "Reload the page"
+    ],
+    "checks": [
+      {
+        "afterStep": 0,
+        "expectText": "หน้าบันทึก"
+      },
+      {
+        "afterStep": 0,
+        "expectText": "Em.Sa"
+      },
+      {
+        "afterStep": 0,
+        "expectText": "Admin Senior"
+      },
+      {
+        "afterStep": 1,
+        "expectText": "Buy milk follow-up"
+      },
+      {
+        "afterStep": 2,
+        "expectText": "Buy milk follow-up"
+      }
+    ]
+  }
+}

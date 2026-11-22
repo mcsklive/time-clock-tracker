@@ -1,0 +1,252 @@
+// Version: 4.0.0
+type AccessControlState__204832294 =
+  {
+    var adminAssigned : Bool;
+    userRoles : Map__175655829<Principal, UserRole__256279894>
+  };
+type AllowlistEntry__17603681 =
+  {
+    displayName : Text;
+    email : Text;
+    permission : PermissionLevel__335210753;
+    role : Text
+  };
+type AllowlistEntry__594741084 =
+  {
+    displayName : Text;
+    email : Text;
+    permission : PermissionLevel__197410184;
+    role : Text
+  };
+type AllowlistState__1010724606 =
+  {entries : Map__175655829<Text, AllowlistEntry__594741084>};
+type CoachingEntry__171965752 =
+  {
+    actionItems : Text;
+    coachName : Text;
+    coachedEmails : [Text];
+    createdAt : Timestamp__878131687;
+    feedback : Text;
+    followUpDate : ?Timestamp__878131687;
+    id : RecordId__486857557;
+    notes : ?Text;
+    observation : Text;
+    owner : Principal;
+    sessionDate : Timestamp__878131687;
+    topic : Text;
+    updatedAt : Timestamp__878131687
+  };
+type CoachingEntry__179281000 =
+  {
+    approverEmails : [Text];
+    createdAt : Timestamp__984617442;
+    endTime : Timestamp__984617442;
+    id : RecordId__342675818;
+    owner : Principal;
+    reason : Text;
+    sessionDate : Timestamp__984617442;
+    startTime : Timestamp__984617442;
+    status : EntryStatus__415899942;
+    updatedAt : Timestamp__984617442
+  };
+type CoachingEntry__247094444 =
+  {
+    approverEmails : [Text];
+    createdAt : Timestamp__801693661;
+    endTime : Timestamp__801693661;
+    id : RecordId__648695638;
+    owner : UserId__1006173170;
+    reason : Text;
+    sessionDate : Timestamp__801693661;
+    startTime : Timestamp__801693661;
+    status : EntryStatus__174669348;
+    updatedAt : Timestamp__801693661
+  };
+type CoachingEntry__334465460 =
+  {
+    approverEmails : [Text];
+    createdAt : Timestamp__361748982;
+    endTime : Timestamp__361748982;
+    id : RecordId__1072753776;
+    owner : Principal;
+    reason : Text;
+    sessionDate : Timestamp__361748982;
+    startTime : Timestamp__361748982;
+    status : EntryStatus__521629665;
+    updatedAt : Timestamp__361748982
+  };
+type Data__1061330525<K, V> =
+  {var count : Nat__565224867; kvs : [var ?(K, V)]};
+type EntryStatus__174669348 = {#coaching; #outboundChat; #training};
+type EntryStatus__415899942 = {#coaching; #outboundChat; #training};
+type EntryStatus__521629665 = {#coaching; #outboundChat; #training};
+type Internal__1060388275<K, V> =
+  {children : [var ?Node__1010487028<K, V>]; data : Data__1061330525<K, V>};
+type Leaf__8515789<K, V> = {data : Data__1061330525<K, V>};
+type Map__175655829<K, V> = Map__975833162<K, V>;
+type Map__925935234<K, V> =
+  {var root : Node__1010487028<K, V>; var size : Nat__565224867};
+type Map__975833162<K, V> = Map__925935234<K, V>;
+type Nat__565224867 = Nat__920180692;
+type Nat__920180692 = Nat;
+type NewActor__206028033 =
+  {
+    accessControlState : AccessControlState__204832294;
+    allowlist : AllowlistState__1010724606;
+    userStates : Map__175655829<Principal, UserState__124502853>;
+    verifiedEmails : Map__175655829<Principal, Text>
+  };
+type NewActor__769816496 =
+  {
+    accessControlState : AccessControlState__204832294;
+    userStates : Map__175655829<Principal, UserState__646307893>
+  };
+type NewActor__78445673 =
+  {
+    accessControlState : AccessControlState__204832294;
+    userStates : Map__175655829<Principal, UserState__283787542>
+  };
+type NewActor__866383623 =
+  {
+    accessControlState : AccessControlState__204832294;
+    userStates : Map__175655829<Principal, UserState__480823257>
+  };
+type Node__1010487028<K, V> =
+  {#internal : Internal__1060388275<K, V>; #leaf : Leaf__8515789<K, V>};
+type OldActor__335026827 =
+  {
+    accessControlState : AccessControlState__204832294;
+    userStates : Map__175655829<Principal, OldUserState__561995353>
+  };
+type OldActor__512397517 = {};
+type OldActor__523825548 =
+  {
+    accessControlState : AccessControlState__204832294;
+    userStates : Map__175655829<Principal, OldUserState__1047625458>
+  };
+type OldActor__93962683 =
+  {
+    accessControlState : AccessControlState__204832294;
+    userStates : Map__175655829<Principal, OldUserState__707249499>
+  };
+type OldCoachingEntry__410531874 =
+  {
+    actionItems : Text;
+    coachName : Text;
+    coachedEmails : [Text];
+    createdAt : OldTimestamp__143906738;
+    feedback : Text;
+    followUpDate : ?OldTimestamp__143906738;
+    id : OldRecordId__710374685;
+    notes : ?Text;
+    observation : Text;
+    owner : Principal;
+    sessionDate : OldTimestamp__143906738;
+    topic : Text;
+    updatedAt : OldTimestamp__143906738
+  };
+type OldRecordId__215431574 = Nat;
+type OldRecordId__710374685 = Nat;
+type OldTimeRecord__637273264 =
+  {
+    clockIn : OldTimestamp__901028593;
+    clockOut : ?OldTimestamp__901028593;
+    createdAt : OldTimestamp__901028593;
+    id : OldRecordId__215431574;
+    note : ?Text;
+    owner : Principal;
+    updatedAt : OldTimestamp__901028593
+  };
+type OldTimestamp__143906738 = Int;
+type OldTimestamp__901028593 = Int;
+type OldUserState__1047625458 =
+  {
+    entries :
+      Map__175655829<OldRecordId__710374685, OldCoachingEntry__410531874>;
+    var nextId : Nat
+  };
+type OldUserState__561995353 =
+  {
+    entries : Map__175655829<RecordId__1072753776, CoachingEntry__334465460>;
+    var nextId : Nat
+  };
+type OldUserState__707249499 =
+  {
+    var nextId : Nat;
+    records :
+      Map__175655829<OldRecordId__215431574, OldTimeRecord__637273264>
+  };
+type PermissionLevel__197410184 = {#allControl; #logStatus; #viewOnly};
+type PermissionLevel__335210753 = {#allControl; #logStatus; #viewOnly};
+type RecordId__1072753776 = Nat;
+type RecordId__342675818 = Nat;
+type RecordId__486857557 = Nat;
+type RecordId__502375809 = Nat;
+type RecordId__634517021 = Nat;
+type RecordId__648695638 = RecordId__634517021;
+type TimeRecord__766945192 =
+  {
+    clockIn : Timestamp__771871407;
+    clockOut : ?Timestamp__771871407;
+    createdAt : Timestamp__771871407;
+    id : RecordId__502375809;
+    note : ?Text;
+    owner : Principal;
+    updatedAt : Timestamp__771871407
+  };
+type Timestamp__301639476 = Int;
+type Timestamp__361748982 = Int;
+type Timestamp__771871407 = Int;
+type Timestamp__801693661 = Timestamp__301639476;
+type Timestamp__878131687 = Int;
+type Timestamp__984617442 = Int;
+type UserId__1006173170 = UserId__158757552;
+type UserId__158757552 = Principal;
+type UserRole__256279894 = {#admin; #guest; #user};
+type UserState__124502853 =
+  {
+    entries : Map__175655829<RecordId__1072753776, CoachingEntry__334465460>;
+    var nextId : Nat
+  };
+type UserState__283787542 =
+  {
+    entries : Map__175655829<RecordId__486857557, CoachingEntry__171965752>;
+    var nextId : Nat
+  };
+type UserState__480823257 =
+  {
+    entries : Map__175655829<RecordId__342675818, CoachingEntry__179281000>;
+    var nextId : Nat
+  };
+type UserState__646307893 =
+  {
+    var nextId : Nat;
+    records : Map__175655829<RecordId__502375809, TimeRecord__766945192>
+  };
+type UserState__716444391 =
+  {
+    entries : Map__175655829<RecordId__648695638, CoachingEntry__247094444>;
+    var nextId : Nat
+  };
+{
+  "00000000_000000" : OldActor__512397517 -> NewActor__769816496;
+  "20261122_060000" : (old : OldActor__93962683) -> NewActor__78445673;
+  "20261122_120000" : (old : OldActor__523825548) -> NewActor__866383623;
+  "20261122_180000" : (old : OldActor__335026827) -> NewActor__206028033
+}
+actor  {
+  stable accessControlState :
+    {
+      var adminAssigned : Bool;
+      userRoles : Map__175655829<Principal, UserRole__256279894>
+    };
+  stable allowlist :
+    {entries : Map__175655829<Text, AllowlistEntry__17603681>};
+  stable userStates :
+    {
+      var root : Node__1010487028<Principal, UserState__716444391>;
+      var size : Nat__565224867
+    };
+  stable verifiedEmails :
+    {var root : Node__1010487028<Principal, Text>; var size : Nat__565224867}
+};

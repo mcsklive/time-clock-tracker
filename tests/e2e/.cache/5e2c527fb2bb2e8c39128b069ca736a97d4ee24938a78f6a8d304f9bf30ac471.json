@@ -1,0 +1,68 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-11-22T06:39:08.827Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "type",
+        "summary": "type \"อบรมเทคนิคการปิดการขายรอบสอง\" into textbox \"เหตุผลที่ใช้สถานะนี้\" in \"แก้ไขบันทึก\"",
+        "target": {
+          "role": "textbox",
+          "name": "เหตุผลที่ใช้สถานะนี้",
+          "text": "อบรมเทคนิคการปิดการขาย",
+          "placeholder": "อธิบายสั้น ๆ ว่าเหตุใดจึงใช้สถานะนี้ เช่น ฝึกสคริปต์ปิดการขายกับทีมใหม่",
+          "within": "แก้ไขบันทึก"
+        },
+        "value": "อบรมเทคนิคการปิดการขายรอบสอง"
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "edit-and-filter.e2e.ts::edit-and-filter",
+      "targetId": "web",
+      "instructionDigest": "51b4246daa5e3c13655a595716fd16f61ba5ea3589aee5d2b879fc48db9c3c10",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "recordedBy": {
+      "provider": "caffeine-inference.chat",
+      "model": "deepseek-v4.1-flash"
+    },
+    "summary": "In the \"แก้ไขบันทึก\" edit dialog, changed the reason field \"เหตุผลที่ใช้สถานะนี้\" to \"อบรมเทคนิคการปิดการขายรอบสอง\". The dialog is still open with the new value; not saved yet.",
+    "startPath": "/entries?range=all&from=&to=&email=&status=",
+    "endPath": "/entries?range=all&from=&to=&email=&status=",
+    "endAnchors": [
+      {
+        "role": "textbox",
+        "name": "เหตุผลที่ใช้สถานะนี้",
+        "text": "อบรมเทคนิคการปิดการขายรอบสอง",
+        "placeholder": "อธิบายสั้น ๆ ว่าเหตุใดจึงใช้สถานะนี้ เช่น ฝึกสคริปต์ปิดการขายกับทีมใหม่",
+        "value": "อบรมเทคนิคการปิดการขายรอบสอง"
+      }
+    ],
+    "goneAnchors": [
+      {
+        "role": "textbox",
+        "name": "เหตุผลที่ใช้สถานะนี้",
+        "text": "อบรมเทคนิคการปิดการขาย",
+        "placeholder": "อธิบายสั้น ๆ ว่าเหตุใดจึงใช้สถานะนี้ เช่น ฝึกสคริปต์ปิดการขายกับทีมใหม่",
+        "value": "อบรมเทคนิคการปิดการขาย"
+      }
+    ],
+    "endWaitMs": 10898,
+    "keyedBy": {
+      "cacheSchema": "trace-1",
+      "policyVersion": "conservative/6",
+      "project": "403fcccf39e2650a7e389bda5a9246bfe8c725769a98b3a749be67a096c16423",
+      "platform": "web",
+      "engineName": "web",
+      "engineSpiVersion": 1,
+      "appIdentity": "aec5acc8a8d7ba14d388c35095196d67ae7ad7199ff1168a3230addcf190cf8d",
+      "agentContextDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}

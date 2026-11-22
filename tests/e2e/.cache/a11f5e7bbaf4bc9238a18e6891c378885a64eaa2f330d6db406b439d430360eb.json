@@ -1,0 +1,157 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-11-22T06:00:21.425Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "type",
+        "summary": "type \"2030-06-15\" into textbox \"วันที่อบรม\"",
+        "target": {
+          "role": "textbox",
+          "name": "วันที่อบรม"
+        },
+        "value": "2030-06-15"
+      },
+      {
+        "name": "type",
+        "summary": "type \"Khun Anan\" into textbox \"ผู้โค้ช / หัวหน้า\"",
+        "target": {
+          "role": "textbox",
+          "name": "ผู้โค้ช / หัวหน้า",
+          "placeholder": "ชื่อผู้ทำการโค้ชชิ่ง"
+        },
+        "value": "Khun Anan"
+      },
+      {
+        "name": "type",
+        "summary": "type \"anan.test@example.com\\nmalee.test@exampl…\" into textbox \"อีเมลผู้รับการโค้ช\"",
+        "target": {
+          "role": "textbox",
+          "name": "อีเมลผู้รับการโค้ช",
+          "placeholder": "หนึ่งอีเมลต่อบรรทัด somchai@example.com"
+        },
+        "value": "anan.test@example.com\nmalee.test@example.com"
+      },
+      {
+        "name": "type",
+        "summary": "type \"การปิดการขาย\" into textbox \"หัวข้อ / โฟกัส\"",
+        "target": {
+          "role": "textbox",
+          "name": "หัวข้อ / โฟกัส",
+          "placeholder": "เช่น การปิดการขายและการรับมือลูกค้าที่ลังเล"
+        },
+        "value": "การปิดการขาย"
+      },
+      {
+        "name": "type",
+        "summary": "type \"ลูกค้าถามราคาแล้วไม่ตอบ\" into textbox \"สิ่งที่พบจากการสังเกต\"",
+        "target": {
+          "role": "textbox",
+          "name": "สิ่งที่พบจากการสังเกต",
+          "placeholder": "สิ่งที่สังเกตเห็นระหว่างการฟังสายหรือดูแชท"
+        },
+        "value": "ลูกค้าถามราคาแล้วไม่ตอบ"
+      },
+      {
+        "name": "type",
+        "summary": "type \"ควรสรุปBenefitsให้เร็วขึ้น\" into textbox \"ฟีดแบ็กที่ให้\"",
+        "target": {
+          "role": "textbox",
+          "name": "ฟีดแบ็กที่ให้",
+          "placeholder": "คำแนะนำที่ให้กับผู้รับการโค้ช"
+        },
+        "value": "ควรสรุปBenefitsให้เร็วขึ้น"
+      },
+      {
+        "name": "type",
+        "summary": "type \"โทรกลับภายในวันเดียว\" into textbox \"ข้อตกลงที่ต้องทำ\"",
+        "target": {
+          "role": "textbox",
+          "name": "ข้อตกลงที่ต้องทำ",
+          "placeholder": "สิ่งที่ตกลงให้ทำต่อ เช่น ฝึกสคริปต์ 3 รอบ"
+        },
+        "value": "โทรกลับภายในวันเดียว"
+      },
+      {
+        "name": "tap",
+        "summary": "tap button \"บันทึกการโค้ชชิ่ง\"",
+        "target": {
+          "role": "button",
+          "name": "บันทึกการโค้ชชิ่ง"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "record-and-keep-session.e2e.ts::record-and-keep-session",
+      "targetId": "web",
+      "instructionDigest": "56daf67a3c8c2172156d6c2a80b6faf90cd18bc752006f4aae30becf2074f5d3",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "recordedBy": {
+      "provider": "caffeine-inference.chat",
+      "model": "deepseek-v4.1-flash"
+    },
+    "summary": "Filled the coaching form (date 2030-06-15, coach Khun Anan, emails anan.test@example.com and malee.test@example.com, topic การปิดการขาย, observation, feedback, action items) and pressed บันทึกการโค้ชชิ่ง. Status \"บันทึกการโค้ชชิ่งเรียบร้อยแล้ว\" appeared; the latest entry lists 15 มิ.ย. 2573 (2030-0…",
+    "startPath": "/",
+    "endPath": "/",
+    "endAnchors": [
+      {
+        "role": "status",
+        "name": "บันทึกการโค้ชชิ่งเรียบร้อยแล้ว"
+      },
+      {
+        "text": "anan.test@example.com"
+      },
+      {
+        "text": "15 มิ.ย. 2573"
+      },
+      {
+        "text": "1 ครั้ง"
+      },
+      {
+        "text": "malee.test@example.com"
+      },
+      {
+        "text": "วันเสาร์"
+      },
+      {
+        "text": "· ผู้โค้ช Khun Anan"
+      },
+      {
+        "text": "การปิดการขาย"
+      }
+    ],
+    "goneAnchors": [
+      {
+        "text": "ยังไม่มีข้อมูลผู้รับการโค้ช"
+      },
+      {
+        "role": "heading",
+        "name": "ยังไม่มีบันทึกการโค้ชชิ่ง"
+      },
+      {
+        "text": "เริ่มบันทึกครั้งแรกจากฟอร์มด้านบน เพื่อเก็บประวัติการโค้ชชิ่งและติดตามผลได้ง่ายขึ้น"
+      },
+      {
+        "text": "ข้อมูลของคุณจะถูกเก็บเป็นส่วนตัว"
+      }
+    ],
+    "endWaitMs": 11379,
+    "keyedBy": {
+      "cacheSchema": "trace-1",
+      "policyVersion": "conservative/6",
+      "project": "403fcccf39e2650a7e389bda5a9246bfe8c725769a98b3a749be67a096c16423",
+      "platform": "web",
+      "engineName": "web",
+      "engineSpiVersion": 1,
+      "appIdentity": "aec5acc8a8d7ba14d388c35095196d67ae7ad7199ff1168a3230addcf190cf8d",
+      "agentContextDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}

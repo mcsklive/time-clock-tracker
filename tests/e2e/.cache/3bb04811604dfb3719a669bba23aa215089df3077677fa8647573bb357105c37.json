@@ -1,0 +1,70 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-11-22T06:26:50.846Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "type",
+        "summary": "type \"somchai@example.com\" into textbox \"ผู้อนุมัติ (อีเมลงาน)\"",
+        "target": {
+          "role": "textbox",
+          "name": "ผู้อนุมัติ (อีเมลงาน)",
+          "placeholder": "หนึ่งอีเมลต่อบรรทัด manager@company.com"
+        },
+        "value": "somchai@example.com"
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "validation-errors.e2e.ts::validation-errors",
+      "targetId": "web",
+      "instructionDigest": "077b23fcf1aaa3e01244120f3e26ba92847b348e0747e65c61ef77f5f08be608",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "recordedBy": {
+      "provider": "caffeine-inference.chat",
+      "model": "deepseek-v4.1-flash"
+    },
+    "summary": "Typed \"somchai@example.com\" into the ผู้อนุมัติ (อีเมลงาน) field; it now shows that value and the \"กรุณากรอกอีเมลผู้อนุมัติอย่างน้อยหนึ่งรายการ\" error disappeared. All validation errors are now cleared; the form is ready to submit.",
+    "startPath": "/",
+    "endPath": "/",
+    "endAnchors": [
+      {
+        "role": "textbox",
+        "name": "ผู้อนุมัติ (อีเมลงาน)",
+        "text": "somchai@example.com",
+        "placeholder": "หนึ่งอีเมลต่อบรรทัด manager@company.com",
+        "value": "somchai@example.com"
+      },
+      {
+        "text": "ใส่หนึ่งอีเมลต่อบรรทัด ระบบจะตัดช่องว่างและข้ามบรรทัดว่างให้"
+      }
+    ],
+    "goneAnchors": [
+      {
+        "role": "textbox",
+        "name": "ผู้อนุมัติ (อีเมลงาน)",
+        "placeholder": "หนึ่งอีเมลต่อบรรทัด manager@company.com"
+      },
+      {
+        "text": "กรุณากรอกอีเมลผู้อนุมัติอย่างน้อยหนึ่งรายการ"
+      }
+    ],
+    "endWaitMs": 10833,
+    "keyedBy": {
+      "cacheSchema": "trace-1",
+      "policyVersion": "conservative/6",
+      "project": "403fcccf39e2650a7e389bda5a9246bfe8c725769a98b3a749be67a096c16423",
+      "platform": "web",
+      "engineName": "web",
+      "engineSpiVersion": 1,
+      "appIdentity": "aec5acc8a8d7ba14d388c35095196d67ae7ad7199ff1168a3230addcf190cf8d",
+      "agentContextDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}

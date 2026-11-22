@@ -1,0 +1,109 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-11-22T06:39:08.824Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap link \"รายการย้อนหลัง\"",
+        "target": {
+          "role": "link",
+          "name": "รายการย้อนหลัง"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "edit-and-filter.e2e.ts::edit-and-filter",
+      "targetId": "web",
+      "instructionDigest": "d2249631fc4836a3723a88f12765c1b574fbd5875e6a43f527552568ad2d1513",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "recordedBy": {
+      "provider": "caffeine-inference.chat",
+      "model": "deepseek-v4.1-flash"
+    },
+    "summary": "Opened the history list page via the \"รายการย้อนหลัง\" nav link. The page shows heading \"รายการย้อนหลัง\", filters (date range, status, approver), and 1 entry: 22 พ.ย. 2569 Coaching 09:00–10:30 \"อบรมเทคนิคการปิดการขาย\" (somchai@example.com).",
+    "startPath": "/",
+    "endPath": "/entries?range=all&from=&to=&email=&status=",
+    "endAnchors": [
+      {
+        "role": "heading",
+        "name": "รายการย้อนหลัง"
+      },
+      {
+        "text": "ดูประวัติการโค้ชชิ่งย้อนหลัง กรองตามวันที่ สถานะ และผู้อนุมัติ"
+      },
+      {
+        "text": "ช่วงวันที่"
+      },
+      {
+        "text": "พบ 1 รายการ"
+      },
+      {
+        "text": "เลือกช่วงวันที่"
+      },
+      {
+        "role": "button",
+        "name": "ทั้งหมด",
+        "states": [
+          "pressed"
+        ]
+      },
+      {
+        "role": "button",
+        "name": "7 วันล่าสุด"
+      },
+      {
+        "role": "button",
+        "name": "30 วันล่าสุด"
+      }
+    ],
+    "goneAnchors": [
+      {
+        "role": "heading",
+        "name": "บันทึกการโค้ชชิ่งใหม่"
+      },
+      {
+        "text": "บันทึกการอบรมและโค้ชชิ่งทีมแชทเซลส์ตามแบบฟอร์ม Training Coaching Log"
+      },
+      {
+        "role": "heading",
+        "name": "ฟอร์มบันทึกครั้งใหม่"
+      },
+      {
+        "text": "กรอกข้อมูลให้ครบถ้วนเพื่อเก็บไว้เป็นหลักฐานการโค้ชชิ่ง"
+      },
+      {
+        "role": "radio",
+        "name": "Training การอบรมหรือสอนงานเป็นกลุ่ม"
+      },
+      {
+        "text": "Training"
+      },
+      {
+        "text": "การอบรมหรือสอนงานเป็นกลุ่ม"
+      },
+      {
+        "role": "radio",
+        "name": "Coaching การโค้ชชิ่งรายบุคคล"
+      }
+    ],
+    "endWaitMs": 10852,
+    "keyedBy": {
+      "cacheSchema": "trace-1",
+      "policyVersion": "conservative/6",
+      "project": "403fcccf39e2650a7e389bda5a9246bfe8c725769a98b3a749be67a096c16423",
+      "platform": "web",
+      "engineName": "web",
+      "engineSpiVersion": 1,
+      "appIdentity": "aec5acc8a8d7ba14d388c35095196d67ae7ad7199ff1168a3230addcf190cf8d",
+      "agentContextDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}

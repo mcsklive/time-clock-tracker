@@ -1,0 +1,34 @@
+{
+  "version": 1,
+  "spec": {
+    "id": "clock-in-and-out",
+    "kind": "interactive",
+    "goal": "Clock in, see the working status, clock out and find the day's total in the history",
+    "requirementIndexes": [],
+    "acceptanceCriteriaIndexes": [],
+    "steps": [
+      "Sign in",
+      "Press เข้างาน",
+      "Press ออกงาน",
+      "Open ประวัติ"
+    ],
+    "checks": [
+      {
+        "afterStep": 0,
+        "expectText": "เข้างาน"
+      },
+      {
+        "afterStep": 1,
+        "expectText": "กำลังทำงาน"
+      },
+      {
+        "afterStep": 2,
+        "expectText": "ยังไม่เข้างาน"
+      },
+      {
+        "afterStep": 3,
+        "expectText": "ประวัติ"
+      }
+    ]
+  }
+}

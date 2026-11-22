@@ -1,0 +1,74 @@
+{
+  "version": 1,
+  "spec": {
+    "id": "validation-errors",
+    "kind": "interactive",
+    "goal": "ฟอร์มปฏิเสธข้อมูลที่ไม่ครบและช่วงเวลาที่ผิด",
+    "requirementIndexes": [],
+    "acceptanceCriteriaIndexes": [],
+    "steps": [
+      "Sign in",
+      "กดบันทึกโดยไม่กรอกข้อมูล ซึ่งแอปปฏิเสธ",
+      "เลือกสถานะ Training",
+      "ตั้งวันที่เป็น 2026-11-23",
+      "ตั้งเวลาเริ่มเป็น 14:00",
+      "ตั้งเวลาสิ้นสุดเป็น 13:00",
+      "กรอกเหตุผลในการใช้สถานะเป็น ทบทวนสคริปต์",
+      "กรอกผู้อนุมัติเป็น somchai@example.com",
+      "กดบันทึก ซึ่งแอปปฏิเสธ",
+      "ตั้งเวลาสิ้นสุดเป็น 15:00",
+      "กรอกผู้อนุมัติเป็น not-an-email",
+      "กดบันทึก ซึ่งแอปปฏิเสธ"
+    ],
+    "checks": [
+      {
+        "afterStep": 0,
+        "expectText": "บันทึก"
+      },
+      {
+        "afterStep": 1,
+        "expectText": "กรุณา"
+      },
+      {
+        "afterStep": 2,
+        "expectText": "Training"
+      },
+      {
+        "afterStep": 3,
+        "expectText": "บันทึก"
+      },
+      {
+        "afterStep": 4,
+        "expectText": "14:00"
+      },
+      {
+        "afterStep": 5,
+        "expectText": "13:00"
+      },
+      {
+        "afterStep": 6,
+        "expectText": "ทบทวนสคริปต์"
+      },
+      {
+        "afterStep": 7,
+        "expectText": "somchai@example.com"
+      },
+      {
+        "afterStep": 8,
+        "expectText": "เวลาสิ้นสุดต้องไม่ก่อนเวลาเริ่ม"
+      },
+      {
+        "afterStep": 9,
+        "expectText": "15:00"
+      },
+      {
+        "afterStep": 10,
+        "expectText": "not-an-email"
+      },
+      {
+        "afterStep": 11,
+        "expectText": "รูปแบบอีเมลไม่ถูกต้อง"
+      }
+    ]
+  }
+}

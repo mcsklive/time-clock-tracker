@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "spec": {
+    "id": "duplicate-guard",
+    "kind": "interactive",
+    "goal": "A repeated clock-in while working is refused with a friendly message",
+    "requirementIndexes": [],
+    "acceptanceCriteriaIndexes": [],
+    "steps": [
+      "Sign in",
+      "Press เข้างาน",
+      "Press เข้างาน again, which the app rejects"
+    ],
+    "checks": [
+      {
+        "afterStep": 0,
+        "expectText": "เข้างาน"
+      },
+      {
+        "afterStep": 1,
+        "expectText": "กำลังทำงาน"
+      },
+      {
+        "afterStep": 2,
+        "expectText": "กำลังทำงาน"
+      }
+    ]
+  }
+}

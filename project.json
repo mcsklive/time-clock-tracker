@@ -1,0 +1,19 @@
+{
+  "overview": "A Thai-language coaching log for a chat sales team, where only people on an approved email list can sign in and each person sees their own records.",
+  "features": [
+    "Sign in with Internet Identity and get checked against an approved email list",
+    "See your display name and role in the app header",
+    "A clear Thai message and sign-out button when your email is not on the list",
+    "Record training, coaching and outbound chat sessions with dates, times and approvers",
+    "Review past records filtered by date, email and status, with a per-person summary"
+  ],
+  "category": "productivity",
+  "tags": [
+    "coaching",
+    "time-tracking",
+    "team-management",
+    "thai",
+    "access-control"
+  ],
+  "last_updated": "2026-11-22T06:43:09.769Z"
+}

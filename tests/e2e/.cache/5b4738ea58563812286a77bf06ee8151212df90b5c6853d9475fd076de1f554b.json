@@ -1,0 +1,93 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-11-22T06:09:16.502Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap button \"Sign in with Internet Identity\"",
+        "target": {
+          "role": "button",
+          "name": "Sign in with Internet Identity"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "filter-and-summary.e2e.ts::filter-and-summary",
+      "targetId": "web",
+      "instructionDigest": "c241dca3437b9c7f28e9c23b30313d5e586b89ba1e0aae41f8af8ef9bdeaf35e",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "recordedBy": {
+      "provider": "caffeine-inference.chat",
+      "model": "deepseek-v4.1-flash"
+    },
+    "summary": "Sign-in completed: the app now shows the signed-in user principal (ckmcq-…-uae) with an \"ออกจากระบบ\" (sign out) button and the coaching entry form. No further action taken.",
+    "startPath": "/",
+    "endPath": "/",
+    "endAnchors": [
+      {
+        "role": "link",
+        "name": "หน้าบันทึก"
+      },
+      {
+        "role": "link",
+        "name": "รายการย้อนหลัง"
+      },
+      {
+        "text": "CK"
+      },
+      {
+        "text": "ผู้ใช้งาน"
+      },
+      {
+        "role": "button",
+        "name": "ออกจากระบบ"
+      },
+      {
+        "role": "heading",
+        "name": "บันทึกการโค้ชชิ่งใหม่"
+      },
+      {
+        "text": "บันทึกการอบรมและโค้ชชิ่งทีมแชทเซลส์ พร้อมสรุปการโค้ชชิ่งต่อบุคคล"
+      },
+      {
+        "role": "heading",
+        "name": "ฟอร์มบันทึกครั้งใหม่"
+      }
+    ],
+    "goneAnchors": [
+      {
+        "role": "heading",
+        "name": "เข้าสู่ระบบเพื่อบันทึกการโค้ชชิ่ง"
+      },
+      {
+        "text": "ใช้ Internet Identity เพื่อยืนยันตัวตน บันทึกการโค้ชชิ่งของคุณจะถูกเก็บเป็นส่วนตัวและเห็นได้เฉพาะคุณเท่านั้น"
+      },
+      {
+        "role": "button",
+        "name": "Sign in with Internet Identity"
+      },
+      {
+        "text": "ยังไม่มีบัญชี? สร้างได้ทันทีในขั้นตอนเข้าสู่ระบบ"
+      }
+    ],
+    "endWaitMs": 10138,
+    "keyedBy": {
+      "cacheSchema": "trace-1",
+      "policyVersion": "conservative/6",
+      "project": "403fcccf39e2650a7e389bda5a9246bfe8c725769a98b3a749be67a096c16423",
+      "platform": "web",
+      "engineName": "web",
+      "engineSpiVersion": 1,
+      "appIdentity": "aec5acc8a8d7ba14d388c35095196d67ae7ad7199ff1168a3230addcf190cf8d",
+      "agentContextDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}

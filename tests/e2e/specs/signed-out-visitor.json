@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "spec": {
+    "id": "signed-out-visitor",
+    "kind": "interactive",
+    "goal": "A signed-out visitor sees the sign-in screen and no time records",
+    "requirementIndexes": [],
+    "acceptanceCriteriaIndexes": [],
+    "persona": "guest",
+    "steps": [
+      "Sign in",
+      "Sign out"
+    ],
+    "checks": [
+      {
+        "afterStep": 0,
+        "expectText": "เข้างาน"
+      },
+      {
+        "afterStep": 1,
+        "expectNoText": "กำลังทำงาน"
+      }
+    ]
+  }
+}

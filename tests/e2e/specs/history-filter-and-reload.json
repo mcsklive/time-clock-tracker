@@ -1,0 +1,39 @@
+{
+  "version": 1,
+  "spec": {
+    "id": "history-filter-and-reload",
+    "kind": "interactive",
+    "goal": "The history filter keeps its chosen range after a reload and the summary stays visible",
+    "requirementIndexes": [],
+    "acceptanceCriteriaIndexes": [],
+    "steps": [
+      "Sign in",
+      "Open ประวัติ",
+      "Choose the สัปดาห์นี้ range",
+      "Reload the page",
+      "Open ประวัติ"
+    ],
+    "checks": [
+      {
+        "afterStep": 0,
+        "expectText": "เข้างาน"
+      },
+      {
+        "afterStep": 1,
+        "expectText": "ประวัติ"
+      },
+      {
+        "afterStep": 2,
+        "expectText": "สัปดาห์นี้"
+      },
+      {
+        "afterStep": 3,
+        "expectText": "เข้างาน"
+      },
+      {
+        "afterStep": 4,
+        "expectText": "สัปดาห์นี้"
+      }
+    ]
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-11-22T06:00:59.226Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap button \"การปิดการขาย\" in \"15 มิ.ย. 2573\"",
+        "target": {
+          "role": "button",
+          "name": "การปิดการขาย",
+          "within": "15 มิ.ย. 2573"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "edit-and-delete-session.e2e.ts::edit-and-delete-session",
+      "targetId": "web",
+      "instructionDigest": "83b7fcecb72c2302000cc8b3cdd56ba0d36af56e51d93b2f6a06f3cb6a5a4954",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "recordedBy": {
+      "provider": "caffeine-inference.chat",
+      "model": "deepseek-v4.1-flash"
+    },
+    "summary": "Tapped the entry titled \"การปิดการขาย\" in the latest entries list; a detail dialog opened showing the entry's date (15 มิ.ย. 2573), coach Khun Anan, recipients, observation, feedback and agreement, with buttons \"แก้ไขบันทึก\", \"ลบบันทึกนี้\" and \"Close\".",
+    "startPath": "/",
+    "endPath": "/",
+    "endAnchors": [
+      {
+        "text": "15 มิ.ย. 2573 · วันเสาร์"
+      },
+      {
+        "role": "heading",
+        "name": "การปิดการขาย"
+      },
+      {
+        "text": "ผู้โค้ช: Khun Anan"
+      },
+      {
+        "role": "heading",
+        "name": "ผู้รับการโค้ช"
+      },
+      {
+        "role": "heading",
+        "name": "สิ่งที่พบจากการสังเกต"
+      },
+      {
+        "role": "heading",
+        "name": "ฟีดแบ็กที่ให้"
+      },
+      {
+        "text": "ควรสรุปBenefitsให้เร็วขึ้น"
+      },
+      {
+        "role": "heading",
+        "name": "ข้อตกลงที่ต้องทำ"
+      }
+    ],
+    "goneAnchors": [
+      {
+        "text": "COACHLOG"
+      },
+      {
+        "text": "บันทึกการโค้ชชิ่งทีมแชทเซลส์"
+      },
+      {
+        "role": "link",
+        "name": "หน้าบันทึก"
+      },
+      {
+        "role": "link",
+        "name": "รายการย้อนหลัง"
+      },
+      {
+        "text": "KE"
+      },
+      {
+        "text": "ผู้ใช้งาน"
+      },
+      {
+        "role": "button",
+        "name": "ออกจากระบบ"
+      },
+      {
+        "role": "heading",
+        "name": "บันทึกการโค้ชชิ่งใหม่"
+      }
+    ],
+    "endWaitMs": 10800,
+    "keyedBy": {
+      "cacheSchema": "trace-1",
+      "policyVersion": "conservative/6",
+      "project": "403fcccf39e2650a7e389bda5a9246bfe8c725769a98b3a749be67a096c16423",
+      "platform": "web",
+      "engineName": "web",
+      "engineSpiVersion": 1,
+      "appIdentity": "aec5acc8a8d7ba14d388c35095196d67ae7ad7199ff1168a3230addcf190cf8d",
+      "agentContextDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}

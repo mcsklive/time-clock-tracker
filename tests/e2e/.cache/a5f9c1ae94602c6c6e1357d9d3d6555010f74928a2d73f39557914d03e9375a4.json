@@ -1,0 +1,119 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-11-22T06:39:08.826Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap button \"22 พ.ย. 2569 วันอาทิตย์ Coaching 09:00 …\" in \"22 พ.ย. 2569\"",
+        "target": {
+          "role": "button",
+          "name": "22 พ.ย. 2569 วันอาทิตย์ Coaching 09:00 – 10:30 1500 ชม. อบรมเทคนิคการปิดการขาย somchai@example.com",
+          "within": "22 พ.ย. 2569"
+        }
+      },
+      {
+        "name": "tap",
+        "summary": "tap button \"แก้ไขบันทึก\" in \"Coaching\"",
+        "target": {
+          "role": "button",
+          "name": "แก้ไขบันทึก",
+          "within": "Coaching"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "edit-and-filter.e2e.ts::edit-and-filter",
+      "targetId": "web",
+      "instructionDigest": "c7e3dbfc5084b6a62413041c9d195fdbc43dd478684505d7bb7ebce6ad764229",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "recordedBy": {
+      "provider": "caffeine-inference.chat",
+      "model": "deepseek-v4.1-flash"
+    },
+    "summary": "Opened the entry \"อบรมเทคนิคการปิดการขาย\" in the history list, then pressed \"แก้ไขบันทึก\". The edit dialog \"แก้ไขบันทึก\" is now open with the record's values (2026-11-22, 09:00–10:30, reason \"อบรมเทคนิคการปิดการขาย\", approver somchai@example.com).",
+    "startPath": "/entries?range=all&from=&to=&email=&status=",
+    "endPath": "/entries?range=all&from=&to=&email=&status=",
+    "endAnchors": [
+      {
+        "role": "heading",
+        "name": "แก้ไขบันทึก"
+      },
+      {
+        "text": "ปรับปรุงรายละเอียดของบันทึกที่เลือก แล้วกดบันทึกการแก้ไข"
+      },
+      {
+        "role": "radio",
+        "name": "Training การอบรมหรือสอนงานเป็นกลุ่ม"
+      },
+      {
+        "text": "Training"
+      },
+      {
+        "text": "การอบรมหรือสอนงานเป็นกลุ่ม"
+      },
+      {
+        "role": "radio",
+        "name": "Coaching การโค้ชชิ่งรายบุคคล",
+        "states": [
+          "checked"
+        ]
+      },
+      {
+        "text": "การโค้ชชิ่งรายบุคคล"
+      },
+      {
+        "role": "radio",
+        "name": "แชทขาออก การติดตามแชทขาออกของทีม"
+      }
+    ],
+    "goneAnchors": [
+      {
+        "text": "COACHLOG"
+      },
+      {
+        "text": "บันทึกการโค้ชชิ่งทีมแชทเซลส์"
+      },
+      {
+        "role": "link",
+        "name": "หน้าบันทึก"
+      },
+      {
+        "role": "link",
+        "name": "รายการย้อนหลัง"
+      },
+      {
+        "text": "CK"
+      },
+      {
+        "text": "ผู้ใช้งาน"
+      },
+      {
+        "role": "button",
+        "name": "ออกจากระบบ"
+      },
+      {
+        "role": "heading",
+        "name": "รายการย้อนหลัง"
+      }
+    ],
+    "endWaitMs": 10808,
+    "keyedBy": {
+      "cacheSchema": "trace-1",
+      "policyVersion": "conservative/6",
+      "project": "403fcccf39e2650a7e389bda5a9246bfe8c725769a98b3a749be67a096c16423",
+      "platform": "web",
+      "engineName": "web",
+      "engineSpiVersion": 1,
+      "appIdentity": "aec5acc8a8d7ba14d388c35095196d67ae7ad7199ff1168a3230addcf190cf8d",
+      "agentContextDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}

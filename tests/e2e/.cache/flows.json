@@ -1,0 +1,270 @@
+{
+  "version": 1,
+  "flows": {
+    "allowed-user-logs-session": {
+      "flowId": "allowed-user-logs-session",
+      "specDigest": "f18d19ca94fd58e853aa99f868b988923d82b8cbbf745b0c4fed4935fb97c219",
+      "status": "record-failed",
+      "recordedAt": "2026-11-22T07:41:40.027Z",
+      "recordedBy": "deepseek-v4.1-flash",
+      "entries": []
+    },
+    "clock-in-and-out": {
+      "flowId": "clock-in-and-out",
+      "specDigest": "0e9bb73a2456ee8e22f8419965d5f31d17ff1a7e3b7f104ca9ba822ed544849f",
+      "status": "recorded",
+      "recordedAt": "2026-11-22T00:20:37.816Z",
+      "recordedBy": "deepseek-v4.1-flash",
+      "entries": [
+        "3b23584bcd9ba71500343ab043f0958cadf1180147a4bba05c666b5e889f6ea8.json",
+        "cb58b7bf8b145f3fa5a42dd1c2c431179b0b40344e32a710b9264f5dd33f1628.json",
+        "1f6d07cc3329b99f9e09a42459f907974ccafcc4ee771a651bcf75d5800c1bb7.json",
+        "999cbfa5686bdb0a8fcaa541e2a3b05056f1e83a31c5cc5c34a76f98e3d3e99c.json"
+      ],
+      "ranAfter": [],
+      "ranWith": []
+    },
+    "create-and-keep-entry": {
+      "flowId": "create-and-keep-entry",
+      "specDigest": "caaf8e083011b565bc9a42cbfc305f6cec847520229ad3d1cba1793fc280036b",
+      "status": "recorded",
+      "recordedAt": "2026-11-22T06:39:33.269Z",
+      "recordedBy": "deepseek-v4.1-flash",
+      "entries": [
+        "631a4993b424a6242ade839deaeb2115ca774544b021e6c8e32714f426705fd1.json",
+        "1ba95ea69fd0dc2f97134fff660f1356cfd3b4eda35db01ed17b9f60f8945544.json",
+        "ba6c635e9253b7cbe865e0d992dd1b2d0ac6742134513be09acb8d977be139d1.json",
+        "593d1ecbe06401081942fe6a973b927e8efa013372aff5f458f0c94a1b2c2828.json",
+        "65a26e9fe7c0bfece45bdeb78e8081173c72ea0fba03a34ba9d64dcd4f067d1e.json",
+        "76ffae859f58721c99d155a5e8e28b0eea316594388c8a8014c5ad4c47e8287b.json",
+        "9a7ca47cdad6b4b3cb106d0ebb8af4b15c29b9fd10f88183535feba8c99be866.json",
+        "a698887154991373118c7b44614a91c41ca4a4da362da817ed37d0c9ed1825e0.json"
+      ],
+      "noChangeSteps": [
+        2
+      ],
+      "ranAfter": [],
+      "ranWith": []
+    },
+    "denied-user-sees-no-data": {
+      "flowId": "denied-user-sees-no-data",
+      "specDigest": "a0a0d5b5bccc307a72bd375b3fc41329eea39129dedfc837882032df7e30734b",
+      "status": "recorded",
+      "recordedAt": "2026-11-22T06:55:48.998Z",
+      "recordedBy": "deepseek-v4.1-flash",
+      "entries": [
+        "72626e8e1f4d41c25796bfb1effc6b8d51d2d0a6f200a6f6099a396ad06b10c3.json"
+      ],
+      "ranAfter": [],
+      "ranWith": [
+        "allowed-user-logs-session"
+      ]
+    },
+    "duplicate-guard": {
+      "flowId": "duplicate-guard",
+      "specDigest": "cd4cac8210e9342e672a43912eb6655327d3a300b4e330c5d321ab0a10f71408",
+      "status": "recorded",
+      "recordedAt": "2026-11-22T00:20:37.818Z",
+      "recordedBy": "deepseek-v4.1-flash",
+      "entries": [
+        "cafa7c9bdfb68453ca99fa5c6cff7655695729ab468f1b872bfd4a454629eda0.json",
+        "4ed2ca6111593ca091ea357996470d6cb3b5d8a9a2f8ee7a651441a596db8054.json",
+        "7c3f9241749705743ac78cd2dd22448770f8616526ff8cdc9ee30b5a15f69564.json"
+      ],
+      "ranAfter": [
+        "clock-in-and-out"
+      ],
+      "ranWith": [
+        "clock-in-and-out"
+      ]
+    },
+    "edit-and-delete-session": {
+      "flowId": "edit-and-delete-session",
+      "specDigest": "96d46f2b18b76854f37bddd1bd32837574c2454305d303181b1d88a28cb45720",
+      "status": "recorded",
+      "recordedAt": "2026-11-22T06:01:51.698Z",
+      "recordedBy": "deepseek-v4.1-flash",
+      "entries": [
+        "a966b50c83ab3b12cc7109994aa9ed412028cd084ea4a5f51b4b5ee8e29728a7.json",
+        "1b204a2c9c8aa7f816118c7560f7fa126e5691ad818c887c92a7b9c6309b4cdc.json",
+        "fdd70da8c748118c34b28c4bed77a81bdea72128da309369752fa7ec0d06e6bf.json",
+        "27aa21072e6d79063b6c27949d3efeeae2db4b23ab566834382acbb625d2e449.json"
+      ],
+      "ranAfter": [
+        "record-and-keep-session",
+        "reject-invalid-email"
+      ],
+      "ranWith": [
+        "record-and-keep-session",
+        "reject-invalid-email"
+      ]
+    },
+    "edit-and-filter": {
+      "flowId": "edit-and-filter",
+      "specDigest": "70e0b224f752e80942bdf284e7496dc898b8590fded96f690af0999402b99c47",
+      "status": "recorded",
+      "recordedAt": "2026-11-22T06:39:33.272Z",
+      "recordedBy": "deepseek-v4.1-flash",
+      "entries": [
+        "3f15f1285d1b3dcc995b1e9dee9a7f0f2ab80a193ceaf76fe930babb0b79f722.json",
+        "53c839b1276bae31d65728852c5e86dbdf1b6a804c6230b204f04ea465cca451.json",
+        "a5f9c1ae94602c6c6e1357d9d3d6555010f74928a2d73f39557914d03e9375a4.json",
+        "5e2c527fb2bb2e8c39128b069ca736a97d4ee24938a78f6a8d304f9bf30ac471.json",
+        "427d2629aa35b0b863fbddc4b8ca7a6eb21bfcc3636d84af163ef5eeb3daea70.json",
+        "faf7f3b5e80a0bef117d1f2497f2c010192dd9f6d5501406ce772ae2a074c279.json"
+      ],
+      "ranAfter": [
+        "create-and-keep-entry",
+        "validation-errors"
+      ],
+      "ranWith": [
+        "create-and-keep-entry",
+        "validation-errors"
+      ]
+    },
+    "filter-and-summary": {
+      "flowId": "filter-and-summary",
+      "specDigest": "6d646dbf30014e97ff74bb4524e2723ef7190e116da7a3daf5f3d40989ad97c4",
+      "status": "recorded",
+      "recordedAt": "2026-11-22T06:09:40.852Z",
+      "recordedBy": "deepseek-v4.1-flash",
+      "entries": [
+        "5b4738ea58563812286a77bf06ee8151212df90b5c6853d9475fd076de1f554b.json",
+        "95c181f7b68aa31c0c6dce10233051c2ff55a069b767cc71e3fbb9ca2ae802b0.json",
+        "f641ccfda03841a455c385b33326ec9766c54cdc09b029ccc2383ea84ed11f04.json",
+        "ad9600fc1065d22682e61b0dd0b33e32e093474b58a8ce2f0a1b9255d6290865.json"
+      ],
+      "ranAfter": [
+        "record-and-keep-session",
+        "reject-invalid-email"
+      ],
+      "ranWith": [
+        "edit-and-delete-session",
+        "record-and-keep-session",
+        "reject-invalid-email"
+      ]
+    },
+    "history-filter-and-reload": {
+      "flowId": "history-filter-and-reload",
+      "specDigest": "72fcf60a8d8bd6d9e96fea0cb8116dcd9823906e964b32eedb932af79522fa76",
+      "status": "recorded",
+      "recordedAt": "2026-11-22T00:20:37.819Z",
+      "recordedBy": "deepseek-v4.1-flash",
+      "entries": [
+        "7a9d308a76ad39328c32e0a494cf3eea408b34b1e560b36a41dedbf4344c1dcb.json",
+        "0e727e7bbd4a75f73cabd96f5a8d24828ab530129684b97a2664ab6acce9a5fc.json",
+        "c1f7426f944ea313912e2122591393b04c3d3078aee1406f33c348d36c070329.json"
+      ],
+      "noChangeSteps": [
+        4
+      ],
+      "ranAfter": [
+        "clock-in-and-out",
+        "duplicate-guard"
+      ],
+      "ranWith": [
+        "clock-in-and-out",
+        "duplicate-guard"
+      ]
+    },
+    "record-and-keep-session": {
+      "flowId": "record-and-keep-session",
+      "specDigest": "ffb63d9bef4802c5b058e2bc8ec68e9dd6b43776a8e811d7fee6514c933ce053",
+      "status": "recorded",
+      "recordedAt": "2026-11-22T06:09:40.823Z",
+      "recordedBy": "deepseek-v4.1-flash",
+      "entries": [
+        "34ff5dbd03c50c10b74cac80324405979d23fd2ec6871aca7b039115248dee51.json",
+        "a11f5e7bbaf4bc9238a18e6891c378885a64eaa2f330d6db406b439d430360eb.json"
+      ],
+      "ranAfter": [],
+      "ranWith": []
+    },
+    "reject-invalid-email": {
+      "flowId": "reject-invalid-email",
+      "specDigest": "9235a05e5d72d3b99744361e9bc1774f9552bdec15440d39ad74215e759a733d",
+      "status": "recorded",
+      "recordedAt": "2026-11-22T06:09:40.837Z",
+      "recordedBy": "deepseek-v4.1-flash",
+      "entries": [
+        "cdeef579108a495bbdbb08996546590742b9a6203ac35033a4e05edbfe0283d0.json",
+        "475521f1ef29d08dbbf8c36ce80a7291792de0a44e97b1703be3fe9860e043a6.json"
+      ],
+      "ranAfter": [
+        "record-and-keep-session"
+      ],
+      "ranWith": [
+        "record-and-keep-session"
+      ]
+    },
+    "second-user-isolation": {
+      "flowId": "second-user-isolation",
+      "specDigest": "0bf085ec66a611b7bf17025aca9c3701a46d27ed1ef6dad2bbfe59e0b15dee84",
+      "status": "recorded",
+      "recordedAt": "2026-11-22T06:39:33.273Z",
+      "recordedBy": "deepseek-v4.1-flash",
+      "entries": [
+        "77a6eccffc28c463ccb3a69f63544e7f8ba0062bfec46e349bb59217d011315a.json",
+        "1eb11a404a78ea830815e05b21bbd65f4ec7461cb30d27c38937310cc92b0363.json"
+      ],
+      "ranAfter": [
+        "create-and-keep-entry",
+        "edit-and-filter",
+        "validation-errors"
+      ],
+      "ranWith": [
+        "create-and-keep-entry",
+        "edit-and-filter",
+        "validation-errors"
+      ]
+    },
+    "signed-out-visitor": {
+      "flowId": "signed-out-visitor",
+      "specDigest": "7ddd1d543d0102eb34d371b0f64640d61629c954cfce77e7ae8db53fe449e067",
+      "status": "recorded",
+      "recordedAt": "2026-11-22T00:20:37.832Z",
+      "recordedBy": "deepseek-v4.1-flash",
+      "entries": [
+        "ada309fc9848ee09ec2ec263d6598f1f79636036d83809af0b3f83135694f4c4.json",
+        "6188fb1393d491bc804dfdab76817bf9551d33b818ba012d0a75e036a5e50838.json"
+      ],
+      "ranAfter": [
+        "clock-in-and-out",
+        "duplicate-guard",
+        "history-filter-and-reload"
+      ],
+      "ranWith": [
+        "clock-in-and-out",
+        "duplicate-guard",
+        "history-filter-and-reload"
+      ]
+    },
+    "validation-errors": {
+      "flowId": "validation-errors",
+      "specDigest": "c6b015ead0709959109268505da1f4d1cf45fa7592eb9e979c9b01c1f4c90f2a",
+      "status": "recorded",
+      "recordedAt": "2026-11-22T06:39:33.271Z",
+      "recordedBy": "deepseek-v4.1-flash",
+      "entries": [
+        "daa7391c384a45a8c78c10ad9f4042212779b2d2d9f0bd3c76c7901c5647f745.json",
+        "0629416208b07b0eca5bc5238f1e0d9816702f1f695bed4cdd27e743ac024a24.json",
+        "3bd9cc1505fec00b05ead5eb8ec0ed4da7c700ce84ff175e7e3677c7822ec257.json",
+        "ffc51aed97982d4b4ca01653733964d4bf9d7af6c948b9f5168025095359fe70.json",
+        "e9ba629dbdf84d3b47f32279525240984f111c1433f37b02f9b47cf0a53f5811.json",
+        "94b7b68025e346b00eb150faccaa0e315bbc6b7b4c75c688712c60e0fe28e604.json",
+        "13228aac8fd67bac6e88d2a51c987c08e581e86b00e5e28339ff26741cdac177.json",
+        "3bb04811604dfb3719a669bba23aa215089df3077677fa8647573bb357105c37.json",
+        "caeeda1ecdcbaea48cab00005e1ea59fe2952d93bf03cc6a82e33c859c2f3627.json",
+        "e1448e96a5277504323dde0b7d8dffd4618514a5a02a080d5b160a3314ff3374.json",
+        "e913df467be0ad525294d7e20998c56d4c17f4356493ebb9400e31fe03bb0579.json",
+        "30f1f7bf1b114a513c8780e7e187c95eb928895f82d5f01bbe14fa3cd1c0b336.json"
+      ],
+      "ranAfter": [
+        "create-and-keep-entry"
+      ],
+      "ranWith": [
+        "create-and-keep-entry"
+      ]
+    }
+  }
+}

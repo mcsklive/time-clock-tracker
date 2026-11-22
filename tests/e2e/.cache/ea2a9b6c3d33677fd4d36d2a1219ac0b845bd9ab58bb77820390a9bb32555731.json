@@ -1,0 +1,92 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-11-22T00:17:01.066Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap button \"Sign in with Internet Identity\"",
+        "target": {
+          "role": "button",
+          "name": "Sign in with Internet Identity"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "history-filter-and-reload.e2e.ts::history-filter-and-reload",
+      "targetId": "web",
+      "instructionDigest": "f114b81251c86aa85afdb2128a3ca5b4d02908c3cbc4c9e58076e66a14c14298",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "recordedBy": {
+      "provider": "caffeine-inference.chat",
+      "model": "deepseek-v4.1-flash"
+    },
+    "summary": "Sign-in completed: the app shows the signed-in home page with the user's principal (aahln-…-uae) and an \"ออกจากระบบ\" (sign out) button, plus the current work status and recent time entries.",
+    "startPath": "/",
+    "endPath": "/",
+    "endAnchors": [
+      {
+        "role": "link",
+        "name": "ลงเวลา"
+      },
+      {
+        "role": "link",
+        "name": "ประวัติ"
+      },
+      {
+        "text": "AA"
+      },
+      {
+        "text": "ผู้ใช้งาน"
+      },
+      {
+        "role": "button",
+        "name": "ออกจากระบบ"
+      },
+      {
+        "role": "heading",
+        "name": "สถานะการทำงานปัจจุบัน"
+      },
+      {
+        "text": "กำลังทำงาน"
+      },
+      {
+        "text": "หมายเหตุ (ไม่บังคับ)"
+      }
+    ],
+    "goneAnchors": [
+      {
+        "role": "heading",
+        "name": "เข้าสู่ระบบเพื่อลงเวลา"
+      },
+      {
+        "text": "ใช้ Internet Identity เพื่อยืนยันตัวตน ข้อมูลการลงเวลาของคุณจะถูกเก็บเป็นส่วนตัวและเห็นได้เฉพาะคุณเท่านั้น"
+      },
+      {
+        "role": "button",
+        "name": "Sign in with Internet Identity"
+      },
+      {
+        "text": "ยังไม่มีบัญชี? สร้างได้ทันทีในขั้นตอนเข้าสู่ระบบ"
+      }
+    ],
+    "endWaitMs": 10141,
+    "keyedBy": {
+      "cacheSchema": "trace-1",
+      "policyVersion": "conservative/6",
+      "project": "403fcccf39e2650a7e389bda5a9246bfe8c725769a98b3a749be67a096c16423",
+      "platform": "web",
+      "engineName": "web",
+      "engineSpiVersion": 1,
+      "appIdentity": "aec5acc8a8d7ba14d388c35095196d67ae7ad7199ff1168a3230addcf190cf8d",
+      "agentContextDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}

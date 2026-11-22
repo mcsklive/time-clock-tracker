@@ -1,0 +1,72 @@
+{
+  "version": 1,
+  "spec": {
+    "id": "create-and-keep-entry",
+    "kind": "interactive",
+    "goal": "บันทึกสถานะ Coaching พร้อมเวลาและผู้อนุมัติ แล้วพบรายการในประวัติและหลังรีเฟรช",
+    "requirementIndexes": [],
+    "acceptanceCriteriaIndexes": [],
+    "steps": [
+      "Sign in",
+      "เลือกสถานะ Coaching",
+      "ตั้งวันที่เป็น 2026-11-22",
+      "ตั้งเวลาเริ่มเป็น 09:00",
+      "ตั้งเวลาสิ้นสุดเป็น 10:30",
+      "กรอกเหตุผลในการใช้สถานะเป็น อบรมเทคนิคการปิดการขาย",
+      "กรอกผู้อนุมัติเป็น somchai@example.com",
+      "กดบันทึก",
+      "เปิดหน้ารายการย้อนหลัง",
+      "Reload the page"
+    ],
+    "checks": [
+      {
+        "afterStep": 0,
+        "expectText": "บันทึก"
+      },
+      {
+        "afterStep": 1,
+        "expectText": "Coaching"
+      },
+      {
+        "afterStep": 2,
+        "expectText": "บันทึก"
+      },
+      {
+        "afterStep": 3,
+        "expectText": "09:00"
+      },
+      {
+        "afterStep": 4,
+        "expectText": "10:30"
+      },
+      {
+        "afterStep": 5,
+        "expectText": "อบรมเทคนิคการปิดการขาย"
+      },
+      {
+        "afterStep": 6,
+        "expectText": "somchai@example.com"
+      },
+      {
+        "afterStep": 7,
+        "expectText": "อบรมเทคนิคการปิดการขาย"
+      },
+      {
+        "afterStep": 8,
+        "expectText": "09:00"
+      },
+      {
+        "afterStep": 8,
+        "expectText": "Coaching"
+      },
+      {
+        "afterStep": 8,
+        "expectText": "somchai@example.com"
+      },
+      {
+        "afterStep": 9,
+        "expectText": "อบรมเทคนิคการปิดการขาย"
+      }
+    ]
+  }
+}

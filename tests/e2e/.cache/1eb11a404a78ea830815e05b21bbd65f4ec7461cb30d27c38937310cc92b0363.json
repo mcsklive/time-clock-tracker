@@ -1,0 +1,109 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-11-22T06:27:40.131Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap link \"รายการย้อนหลัง\"",
+        "target": {
+          "role": "link",
+          "name": "รายการย้อนหลัง"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "second-user-isolation.e2e.ts::second-user-isolation",
+      "targetId": "web",
+      "instructionDigest": "8368db5c38e28882adabd6a64dc827b8a859c1e15b77e83e21a6f831346521d6",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "recordedBy": {
+      "provider": "caffeine-inference.chat",
+      "model": "deepseek-v4.1-flash"
+    },
+    "summary": "Tapped \"รายการย้อนหลัง\" in the main menu; the history page (/entries) opened showing heading \"รายการย้อนหลัง\", filters (ช่วงวันที่, สถานะ, ผู้อนุมัติ) and \"พบ 0 รายการ\" with an empty-state message.",
+    "startPath": "/",
+    "endPath": "/entries?range=all&from=&to=&email=&status=",
+    "endAnchors": [
+      {
+        "role": "heading",
+        "name": "รายการย้อนหลัง"
+      },
+      {
+        "text": "ดูประวัติการโค้ชชิ่งย้อนหลัง กรองตามวันที่ สถานะ และผู้อนุมัติ"
+      },
+      {
+        "text": "ช่วงวันที่"
+      },
+      {
+        "text": "พบ 0 รายการ"
+      },
+      {
+        "text": "เลือกช่วงวันที่"
+      },
+      {
+        "role": "button",
+        "name": "ทั้งหมด",
+        "states": [
+          "pressed"
+        ]
+      },
+      {
+        "role": "button",
+        "name": "7 วันล่าสุด"
+      },
+      {
+        "role": "button",
+        "name": "30 วันล่าสุด"
+      }
+    ],
+    "goneAnchors": [
+      {
+        "role": "heading",
+        "name": "บันทึกการโค้ชชิ่งใหม่"
+      },
+      {
+        "text": "บันทึกการอบรมและโค้ชชิ่งทีมแชทเซลส์ตามแบบฟอร์ม Training Coaching Log"
+      },
+      {
+        "role": "heading",
+        "name": "ฟอร์มบันทึกครั้งใหม่"
+      },
+      {
+        "text": "กรอกข้อมูลให้ครบถ้วนเพื่อเก็บไว้เป็นหลักฐานการโค้ชชิ่ง"
+      },
+      {
+        "role": "radio",
+        "name": "Training การอบรมหรือสอนงานเป็นกลุ่ม"
+      },
+      {
+        "text": "Training"
+      },
+      {
+        "text": "การอบรมหรือสอนงานเป็นกลุ่ม"
+      },
+      {
+        "role": "radio",
+        "name": "Coaching การโค้ชชิ่งรายบุคคล"
+      }
+    ],
+    "endWaitMs": 10840,
+    "keyedBy": {
+      "cacheSchema": "trace-1",
+      "policyVersion": "conservative/6",
+      "project": "403fcccf39e2650a7e389bda5a9246bfe8c725769a98b3a749be67a096c16423",
+      "platform": "web",
+      "engineName": "web",
+      "engineSpiVersion": 1,
+      "appIdentity": "aec5acc8a8d7ba14d388c35095196d67ae7ad7199ff1168a3230addcf190cf8d",
+      "agentContextDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}

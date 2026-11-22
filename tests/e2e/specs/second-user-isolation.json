@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "spec": {
+    "id": "second-user-isolation",
+    "kind": "interactive",
+    "goal": "ผู้ใช้อีกคนไม่เห็นรายการของผู้ใช้คนแรก",
+    "requirementIndexes": [],
+    "acceptanceCriteriaIndexes": [],
+    "persona": "second-user",
+    "steps": [
+      "Sign in",
+      "เปิดหน้ารายการย้อนหลัง"
+    ],
+    "checks": [
+      {
+        "afterStep": 0,
+        "expectText": "บันทึก"
+      },
+      {
+        "afterStep": 1,
+        "expectNoText": "อบรมเทคนิคการปิดการขาย"
+      }
+    ]
+  }
+}

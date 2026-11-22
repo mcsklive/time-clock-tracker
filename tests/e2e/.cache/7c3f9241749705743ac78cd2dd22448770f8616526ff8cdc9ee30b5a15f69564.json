@@ -1,0 +1,65 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-11-22T00:12:38.909Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap button \"เข้างาน\" in \"สถานะการทำงานปัจจุบัน\"",
+        "target": {
+          "role": "button",
+          "name": "เข้างาน",
+          "within": "สถานะการทำงานปัจจุบัน"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "duplicate-guard.e2e.ts::duplicate-guard",
+      "targetId": "web",
+      "instructionDigest": "bf39e6c1ccc0da74dd720786bfe845cedc9ff9aed8c73fa87fa00d568fc2cd71",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "recordedBy": {
+      "provider": "caffeine-inference.chat",
+      "model": "deepseek-v4.1-flash"
+    },
+    "summary": "Pressed เข้างาน again while already clocked in; the app rejected it with the alert \"บันทึกไม่สำเร็จ — คุณเข้างานอยู่แล้ว กรุณาออกงานก่อนบันทึกครั้งใหม่\". Status still reads กำลังทำงาน and no new entry was added.",
+    "startPath": "/",
+    "endPath": "/",
+    "endAnchors": [
+      {
+        "role": "alert",
+        "name": "บันทึกไม่สำเร็จ คุณเข้างานอยู่แล้ว กรุณาออกงานก่อนบันทึกครั้งใหม่"
+      },
+      {
+        "text": "บันทึกไม่สำเร็จ"
+      },
+      {
+        "text": "คุณเข้างานอยู่แล้ว กรุณาออกงานก่อนบันทึกครั้งใหม่"
+      }
+    ],
+    "goneAnchors": [
+      {
+        "role": "status",
+        "name": "00:00:00"
+      }
+    ],
+    "endWaitMs": 11568,
+    "keyedBy": {
+      "cacheSchema": "trace-1",
+      "policyVersion": "conservative/6",
+      "project": "403fcccf39e2650a7e389bda5a9246bfe8c725769a98b3a749be67a096c16423",
+      "platform": "web",
+      "engineName": "web",
+      "engineSpiVersion": 1,
+      "appIdentity": "aec5acc8a8d7ba14d388c35095196d67ae7ad7199ff1168a3230addcf190cf8d",
+      "agentContextDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}

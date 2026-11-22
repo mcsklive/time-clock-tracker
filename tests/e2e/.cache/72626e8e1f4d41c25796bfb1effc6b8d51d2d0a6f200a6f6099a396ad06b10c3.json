@@ -1,0 +1,81 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-11-22T06:55:48.879Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap button \"Sign in with Internet Identity\"",
+        "target": {
+          "role": "button",
+          "name": "Sign in with Internet Identity"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "denied-user-sees-no-data.e2e.ts::denied-user-sees-no-data",
+      "targetId": "web",
+      "instructionDigest": "bfd402b2f6f3812529b55596136d3a11c51616317e3b1cd999928e2d4eae7d3f",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "recordedBy": {
+      "provider": "caffeine-inference.chat",
+      "model": "deepseek-v4.1-flash"
+    },
+    "summary": "Signed in with Internet Identity via \"Sign in with Internet Identity\". The app now shows a signed-in state with a \"ออกจากระบบ\" (Sign out) button and the message \"อีเมลของคุณไม่อยู่ในรายชื่อผู้มีสิทธิ์\" (email not on the allowlist), with no data shown.",
+    "startPath": "/",
+    "endPath": "/",
+    "endAnchors": [
+      {
+        "role": "heading",
+        "name": "อีเมลของคุณไม่อยู่ในรายชื่อผู้มีสิทธิ์"
+      },
+      {
+        "text": "บัญชีที่ใช้เข้าสู่ระบบนี้ยังไม่ได้รับอนุญาตให้ใช้งาน COACHLOG กรุณาติดต่อผู้ดูแลระบบเพื่อขอเพิ่มอีเมลของคุณในรายชื่อผู้มีสิทธิ์"
+      },
+      {
+        "text": "แจ้งอีเมลที่ใช้เข้าสู่ระบบให้ผู้ดูแลระบบ เพื่อขอเพิ่มสิทธิ์การใช้งาน แล้วเข้าสู่ระบบอีกครั้ง"
+      },
+      {
+        "role": "button",
+        "name": "ออกจากระบบ"
+      },
+      {
+        "text": "ต้องการใช้บัญชีอื่น? ออกจากระบบแล้วเข้าสู่ระบบใหม่ได้เลย"
+      }
+    ],
+    "goneAnchors": [
+      {
+        "role": "heading",
+        "name": "เข้าสู่ระบบเพื่อบันทึกการโค้ชชิ่ง"
+      },
+      {
+        "text": "ใช้ Internet Identity เพื่อยืนยันตัวตน บันทึกการโค้ชชิ่งของคุณจะถูกเก็บเป็นส่วนตัวและเห็นได้เฉพาะคุณเท่านั้น"
+      },
+      {
+        "role": "button",
+        "name": "Sign in with Internet Identity"
+      },
+      {
+        "text": "ยังไม่มีบัญชี? สร้างได้ทันทีในขั้นตอนเข้าสู่ระบบ"
+      }
+    ],
+    "endWaitMs": 20556,
+    "keyedBy": {
+      "cacheSchema": "trace-1",
+      "policyVersion": "conservative/6",
+      "project": "403fcccf39e2650a7e389bda5a9246bfe8c725769a98b3a749be67a096c16423",
+      "platform": "web",
+      "engineName": "web",
+      "engineSpiVersion": 1,
+      "appIdentity": "aec5acc8a8d7ba14d388c35095196d67ae7ad7199ff1168a3230addcf190cf8d",
+      "agentContextDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}

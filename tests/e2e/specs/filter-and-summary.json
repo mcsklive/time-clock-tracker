@@ -1,0 +1,43 @@
+{
+  "version": 1,
+  "spec": {
+    "id": "filter-and-summary",
+    "kind": "interactive",
+    "goal": "กรองตามอีเมลผู้รับการโค้ชและดูสรุปต่อบุคคล พร้อมตัวกรองคงอยู่หลังรีเฟรชหน้า",
+    "requirementIndexes": [],
+    "acceptanceCriteriaIndexes": [],
+    "steps": [
+      "Sign in",
+      "Add a coaching session dated 2030-06-17 with coach Khun Anan, coached email somchai.test@example.com, topic การฟังลูกค้า, observation ลูกค้าพูดเร็ว, feedback ฟังให้จบ, action items จดบันทึกทุกครั้ง, and press บันทึก",
+      "Open the history page",
+      "Filter by the coached email somchai.test@example.com",
+      "Reload the page"
+    ],
+    "checks": [
+      {
+        "afterStep": 0,
+        "expectText": "บันทึกการโค้ชชิ่ง"
+      },
+      {
+        "afterStep": 1,
+        "expectText": "somchai.test@example.com"
+      },
+      {
+        "afterStep": 2,
+        "expectText": "รายการย้อนหลัง"
+      },
+      {
+        "afterStep": 3,
+        "expectText": "somchai.test@example.com"
+      },
+      {
+        "afterStep": 4,
+        "expectText": "somchai.test@example.com"
+      },
+      {
+        "afterStep": 4,
+        "expectNoText": "malee.test@example.com"
+      }
+    ]
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-11-22T06:36:35.847Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap button \"บันทึกการโค้ชชิ่ง\"",
+        "target": {
+          "role": "button",
+          "name": "บันทึกการโค้ชชิ่ง"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "validation-errors.e2e.ts::validation-errors",
+      "targetId": "web",
+      "instructionDigest": "ca69b255f348f0923e9cec7ae3f3b96a3cfe082ee83354a2e3efa0cf95d704dd",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "recordedBy": {
+      "provider": "caffeine-inference.chat",
+      "model": "deepseek-v4.1-flash"
+    },
+    "summary": "Tapped \"บันทึกการโค้ชชิ่ง\" with all fields filled (end time 13:00 before start 14:00); the app refused and showed the validation error \"เวลาสิ้นสุดต้องไม่ก่อนเวลาเริ่ม\". No record was created (ครั้งที่บันทึก still 0).",
+    "startPath": "/",
+    "endPath": "/",
+    "endAnchors": [
+      {
+        "text": "เวลาสิ้นสุดต้องไม่ก่อนเวลาเริ่ม"
+      }
+    ],
+    "endWaitMs": 10795,
+    "keyedBy": {
+      "cacheSchema": "trace-1",
+      "policyVersion": "conservative/6",
+      "project": "403fcccf39e2650a7e389bda5a9246bfe8c725769a98b3a749be67a096c16423",
+      "platform": "web",
+      "engineName": "web",
+      "engineSpiVersion": 1,
+      "appIdentity": "aec5acc8a8d7ba14d388c35095196d67ae7ad7199ff1168a3230addcf190cf8d",
+      "agentContextDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}

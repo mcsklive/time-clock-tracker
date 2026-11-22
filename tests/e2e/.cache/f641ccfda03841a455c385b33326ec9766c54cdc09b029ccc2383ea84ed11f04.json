@@ -1,0 +1,110 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-11-22T06:01:21.086Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap link \"รายการย้อนหลัง\"",
+        "target": {
+          "role": "link",
+          "name": "รายการย้อนหลัง"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "filter-and-summary.e2e.ts::filter-and-summary",
+      "targetId": "web",
+      "instructionDigest": "a69bd2bdd2182e88499b932c85496e3ab450f1140287202551b5857324098798",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "recordedBy": {
+      "provider": "caffeine-inference.chat",
+      "model": "deepseek-v4.1-flash"
+    },
+    "summary": "Tapped \"รายการย้อนหลัง\" in the main menu; the history page (/entries) opened showing heading \"รายการย้อนหลัง\", filters (ช่วงวันที่, อีเมลผู้รับการโค้ช), \"พบ 1 รายการ\", the entry list with the 17 มิ.ย. 2573 record, and the \"สรุปต่อบุคคล\" summary section.",
+    "startPath": "/",
+    "endPath": "/entries?range=all&from=&to=&email=",
+    "endAnchors": [
+      {
+        "role": "heading",
+        "name": "รายการย้อนหลัง"
+      },
+      {
+        "text": "ดูประวัติการโค้ชชิ่งย้อนหลัง กรองตามวันที่และผู้รับการโค้ช"
+      },
+      {
+        "text": "ช่วงวันที่"
+      },
+      {
+        "text": "พบ 1 รายการ"
+      },
+      {
+        "text": "เลือกช่วงวันที่"
+      },
+      {
+        "role": "button",
+        "name": "ทั้งหมด",
+        "states": [
+          "pressed"
+        ]
+      },
+      {
+        "role": "button",
+        "name": "7 วันล่าสุด"
+      },
+      {
+        "role": "button",
+        "name": "30 วันล่าสุด"
+      }
+    ],
+    "goneAnchors": [
+      {
+        "role": "status",
+        "name": "บันทึกการโค้ชชิ่งเรียบร้อยแล้ว"
+      },
+      {
+        "role": "heading",
+        "name": "บันทึกการโค้ชชิ่งใหม่"
+      },
+      {
+        "text": "บันทึกการอบรมและโค้ชชิ่งทีมแชทเซลส์ พร้อมสรุปการโค้ชชิ่งต่อบุคคล"
+      },
+      {
+        "role": "heading",
+        "name": "ฟอร์มบันทึกครั้งใหม่"
+      },
+      {
+        "text": "กรอกข้อมูลให้ครบถ้วนเพื่อเก็บไว้เป็นหลักฐานการโค้ชชิ่ง"
+      },
+      {
+        "text": "วันที่อบรม"
+      },
+      {
+        "text": "ผู้โค้ช / หัวหน้า"
+      },
+      {
+        "role": "textbox",
+        "name": "ผู้โค้ช / หัวหน้า",
+        "placeholder": "ชื่อผู้ทำการโค้ชชิ่ง"
+      }
+    ],
+    "endWaitMs": 10863,
+    "keyedBy": {
+      "cacheSchema": "trace-1",
+      "policyVersion": "conservative/6",
+      "project": "403fcccf39e2650a7e389bda5a9246bfe8c725769a98b3a749be67a096c16423",
+      "platform": "web",
+      "engineName": "web",
+      "engineSpiVersion": 1,
+      "appIdentity": "aec5acc8a8d7ba14d388c35095196d67ae7ad7199ff1168a3230addcf190cf8d",
+      "agentContextDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}

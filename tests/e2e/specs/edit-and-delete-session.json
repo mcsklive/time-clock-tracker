@@ -1,0 +1,34 @@
+{
+  "version": 1,
+  "spec": {
+    "id": "edit-and-delete-session",
+    "kind": "interactive",
+    "goal": "แก้ไขรายการที่บันทึกไว้แล้วลบออกหลังยืนยัน",
+    "requirementIndexes": [],
+    "acceptanceCriteriaIndexes": [],
+    "steps": [
+      "Sign in",
+      "Open the entry titled การปิดการขาย",
+      "Edit the entry to change the topic to การปิดการขายขั้นสูง and press บันทึก",
+      "Delete the entry titled การปิดการขายขั้นสูง and confirm"
+    ],
+    "checks": [
+      {
+        "afterStep": 0,
+        "expectText": "บันทึกการโค้ชชิ่ง"
+      },
+      {
+        "afterStep": 1,
+        "expectText": "anan.test@example.com"
+      },
+      {
+        "afterStep": 2,
+        "expectText": "การปิดการขายขั้นสูง"
+      },
+      {
+        "afterStep": 3,
+        "expectNoText": "การปิดการขายขั้นสูง"
+      }
+    ]
+  }
+}

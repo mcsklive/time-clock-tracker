@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "spec": {
+    "id": "denied-user-sees-no-data",
+    "kind": "interactive",
+    "goal": "A person whose email is not on the approved list is refused and sees no app data",
+    "requirementIndexes": [
+      5,
+      6
+    ],
+    "acceptanceCriteriaIndexes": [
+      2
+    ],
+    "persona": "outsider",
+    "steps": [
+      "Sign in"
+    ],
+    "checks": [
+      {
+        "afterStep": 0,
+        "expectNoText": "หน้าบันทึก"
+      },
+      {
+        "afterStep": 0,
+        "expectNoText": "Buy milk follow-up"
+      }
+    ]
+  }
+}

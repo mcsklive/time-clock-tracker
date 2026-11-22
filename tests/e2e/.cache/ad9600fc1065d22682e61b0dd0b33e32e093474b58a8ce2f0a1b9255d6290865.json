@@ -1,0 +1,73 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-11-22T06:01:21.087Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap combobox \"อีเมลผู้รับการโค้ช\" in \"ช่วงวันที่\"",
+        "target": {
+          "role": "combobox",
+          "name": "อีเมลผู้รับการโค้ช",
+          "within": "ช่วงวันที่"
+        }
+      },
+      {
+        "name": "tap",
+        "summary": "tap option \"somchai.test@example.com\"",
+        "target": {
+          "role": "option",
+          "name": "somchai.test@example.com"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "filter-and-summary.e2e.ts::filter-and-summary",
+      "targetId": "web",
+      "instructionDigest": "e913ff48890c5ed223df9e0e8467a5aea485acf993a124ba9942434b98eb4667",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "recordedBy": {
+      "provider": "caffeine-inference.chat",
+      "model": "deepseek-v4.1-flash"
+    },
+    "summary": "Opened the \"อีเมลผู้รับการโค้ช\" filter on /entries and selected somchai.test@example.com. URL now has email=somchai.test%40example.com, the filter shows the email, \"พบ 1 รายการ\" with the 17 มิ.ย. 2573 record, and the summary lists somchai.test@example.com with count 1.",
+    "startPath": "/entries?range=all&from=&to=&email=",
+    "endPath": "/entries?range=all&from=&to=&email=somchai.test%40example.com",
+    "endAnchors": [
+      {
+        "role": "button",
+        "name": "somchai.test@example.com ล่าสุด 17 มิ.ย. 2573 1",
+        "states": [
+          "pressed"
+        ]
+      }
+    ],
+    "goneAnchors": [
+      {
+        "text": "ทุกคน"
+      },
+      {
+        "role": "button",
+        "name": "somchai.test@example.com ล่าสุด 17 มิ.ย. 2573 1"
+      }
+    ],
+    "endWaitMs": 10819,
+    "keyedBy": {
+      "cacheSchema": "trace-1",
+      "policyVersion": "conservative/6",
+      "project": "403fcccf39e2650a7e389bda5a9246bfe8c725769a98b3a749be67a096c16423",
+      "platform": "web",
+      "engineName": "web",
+      "engineSpiVersion": 1,
+      "appIdentity": "aec5acc8a8d7ba14d388c35095196d67ae7ad7199ff1168a3230addcf190cf8d",
+      "agentContextDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}
