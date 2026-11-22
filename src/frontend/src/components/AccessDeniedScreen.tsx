@@ -1,5 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { accessCopy } from "@/lib/format";
+import { clearPendingSignInEmail } from "@/lib/signInEmail";
 import { useInternetIdentity } from "@caffeineai/core-infrastructure";
 import { useQueryClient } from "@tanstack/react-query";
 import { LogOut, MailQuestion, ShieldAlert } from "lucide-react";
@@ -12,11 +13,12 @@ import { LogOut, MailQuestion, ShieldAlert } from "lucide-react";
 export function AccessDeniedScreen({
   reason = "notListed",
 }: {
-  reason?: "noEmail" | "notListed";
+  reason?: "noEmail" | "notListed" | "emailMismatch";
 }) {
   const { clear } = useInternetIdentity();
   const queryClient = useQueryClient();
   const noEmail = reason === "noEmail";
+  const emailMismatch = reason === "emailMismatch";
 
   return (
     <div className="flex min-h-dvh flex-col items-center justify-center bg-background px-4 py-10 text-foreground">
@@ -42,10 +44,18 @@ export function AccessDeniedScreen({
           <CardContent className="flex flex-col items-center gap-5 px-6 py-8 text-center md:px-8">
             <div className="flex flex-col gap-2">
               <h1 className="font-display text-2xl font-bold tracking-tight">
-                {noEmail ? accessCopy.noEmailTitle : accessCopy.deniedTitle}
+                {emailMismatch
+                  ? accessCopy.emailMismatchTitle
+                  : noEmail
+                    ? accessCopy.noEmailTitle
+                    : accessCopy.deniedTitle}
               </h1>
               <p className="text-sm leading-relaxed text-muted-foreground">
-                {noEmail ? accessCopy.noEmailBody : accessCopy.deniedBody}
+                {emailMismatch
+                  ? accessCopy.emailMismatchBody
+                  : noEmail
+                    ? accessCopy.noEmailBody
+                    : accessCopy.deniedBody}
               </p>
             </div>
 
@@ -55,9 +65,11 @@ export function AccessDeniedScreen({
                 aria-hidden="true"
               />
               <p className="text-sm leading-relaxed text-muted-foreground">
-                {noEmail
-                  ? "ออกจากระบบแล้วเข้าสู่ระบบใหม่ด้วยบัญชีอีเมลองค์กร (Google หรือ Microsoft) ที่ผูกกับอีเมลที่ได้รับอนุญาต"
-                  : "แจ้งอีเมลที่ใช้เข้าสู่ระบบให้ผู้ดูแลระบบ เพื่อขอเพิ่มสิทธิ์การใช้งาน แล้วเข้าสู่ระบบอีกครั้ง"}
+                {emailMismatch
+                  ? "ออกจากระบบแล้วกรอกอีเมลที่ตรงกับบัญชี Google หรือ Microsoft ที่ใช้ยืนยันตัวตน"
+                  : noEmail
+                    ? "ออกจากระบบแล้วเข้าสู่ระบบใหม่ด้วยบัญชีอีเมลองค์กร (Google หรือ Microsoft) ที่ผูกกับอีเมลที่ได้รับอนุญาต"
+                    : "แจ้งอีเมลที่ใช้เข้าสู่ระบบให้ผู้ดูแลระบบ เพื่อขอเพิ่มสิทธิ์การใช้งาน แล้วเข้าสู่ระบบอีกครั้ง"}
               </p>
             </div>
 
@@ -67,6 +79,7 @@ export function AccessDeniedScreen({
               onClick={() => {
                 void queryClient.cancelQueries();
                 queryClient.clear();
+                clearPendingSignInEmail();
                 clear();
               }}
               className="inline-flex min-h-12 w-full items-center justify-center gap-2 rounded-xl bg-primary px-6 text-sm font-semibold text-primary-foreground transition-smooth hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-card"
