@@ -64,6 +64,7 @@ module {
   // Seed rows: (normalized email, display name, role, permission).
   let seed : [(Text, Text, Text, PermissionLevel)] = [
     ("moem.sankroong@shopeemobile-external.com", "Em.Sa", "Admin Senior", #allControl),
+    ("doct.1001001@gmail.com", "Doctor", "Admin Senior", #allControl),
     ("mopure.soda@shopeemobile-external.com", "Pure.", "Agent", #viewOnly),
     ("mojoy.hinrang@shopeemobile-external.com", "Joy", "Agent", #viewOnly),
     ("mochay.janthasri@shopeemobile-external.com", "Chay", "Agent", #viewOnly),
